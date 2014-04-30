@@ -1,0 +1,110 @@
+---
+layout: index
+title: Home
+---
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/stylesheets/home.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+  
+
+  <!-- build:js ./assets/javascript/all.min.js -->
+  <!-- <script src="/assets/javascript/javascript.js"></script> -->
+  <!-- <script src="/assets/javascript/somejavascript.js"></script> -->
+  <!-- endbuild -->
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="http://www.gregllly.com/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+<body class="wrap">
+	 {% include sidebar.html %}
+		<div class="wrap">
+				<h1 class="logo container">
+            <a href="/" title="Home"><img src="/assets/images/logo.svg" alt="Logo"></a>
+        </h1>
+  			<!-- <div class="container clearfix">
+						<nav class="nav">
+							<a class="green" href="#portfolio"><li>process</li></a>
+							<a class="green" href="#resume"><li>r&eacutesum&eacute</li></a>
+						</nav>
+				</div> -->
+			</div>
+			</header>
+			<section class="hero wrap">
+				<div class="container clearfix">
+						<p class="intro">Co-founder <a class="green" href="http://www.huit.ly" alt="check out our airbnb services at Huitly">@Huitly</a>, designer, front-end</p>
+				</div>
+			</section>
+			<section class="work wrap">
+				<div class="container clearfix"><p>Recent Work</p>
+						<ul class="projects">
+							<a href="http://www.huit.ly"><li><img src="assets/images/huitly-website-design.jpg" alt="check out Huitly live site" title="Check out Huitly"><p>identity + design + build</p></li></a>
+						
+							<a href="http://www.ncmsupport.org"><li><div class="work-summary"><img src="assets/images/native-canadian-ministries-website-design.jpg" alt="check out NCM live site" title="Check out NCM"><div class="work-summary"><p>identity + design + build</p></li></a>
+							<a href="http://www.3dollarmonsters.com"><li><div class="work-summary"><img src="assets/images/3dollarmonsters-website-design.png" alt="check out my work" title="Check out 3 Dollar Monsters live site"><div class="work-summary"><p>side project</p></li></a>
+							<a href="http://www.ncmsupport.org"><li><div class="work-summary"><img src="assets/images/hire.png" alt="check out my work" title="Check out NCM"><div class="work-summary"><p>your project here</p></li></a>
+						</ul>
+				</div>
+			</section>
+			<!-- <section class="info clearfix wrap">
+				<div class="container">		
+					<h2>so you like details...me too</h2>
+						<div class="downloads">
+							<a id="portfolio" class="portfolio" href="http://www.gregllly.com/greg-lilley-portfolio.zip" alt="download a case study of my process" onClick="_gap.push(['_trackEvent', 'Work', 'Download', 'Process']);">
+								<span class="download-icons pdf"></span>
+								<p class="green">process</p>
+							</a>
+							<a id="resume" class="resume" href="http://www.gregllly.com/greg-lilley-resume.zip" alt="download my resume" onClick="_gap.push(['_trackEvent', 'Work', 'Download', 'Resume']);">
+								<span class="download-icons resume"></span>
+								<p class="green">r&eacutesum&eacute</p>
+							</a>	
+						</div>
+					</div>
+				</div>	
+			</section> -->
+			<!-- <section class="coming-soon clearfix wrap">
+				<div class="container">
+					<h2>Side Projects</h2>
+					<div class="side-project inthewild">
+						<p>coming soon...</p>
+						<img src="assets/images/inthewild-logo-1.svg" alt="in the wild user experience is coming soon">
+					</div>
+					<div class="side-project threedollar">
+						<p>now live!</p>
+						<a href="http://www.3dollarmonsters.com" title="Check out 3 Dollar Monsters"><img src="assets/images/3dollarmonsters.svg" alt="3 dollar monsters - get a hand drawn postcard and coordinates to find your monster in the world"></a>
+					</div>
+				</div>
+			</section> -->
+			<footer class="clearfix wrap home-footer">
+			<div class="container">
+				<a class="social-icon twitter" href="http://www.twitter.com/gregllly" alt="Follow me on Twitter"></a>
+				<a class="social-icon linkedin" href="http://www.linkedin.com/in/greglilley" alt="Check out my LinkedIn profile"></a>
+				<p>Greg Lilley &copy 2014</p>
+			</div>
+	</footer>
+		
+	<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+</body>
+</html>
