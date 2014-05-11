@@ -3,28 +3,13 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+Everyone can solve problems, but designers strategically frame problems and apply a process to replicate finding solutions for any problem. It’s not always visual, though who doesn’t admire the great work on [dribbble](http://www.dribbble.com/greglilley), and it’s not always about the newest techniques -- yes, parallax effects can be cool. The best solutions are those that match users' goals and are intuitive because thoughtful communication is the focal point. From creative microcopy that provides a human touch at the end of a digital screen to the organization of information for quickly completing a task, I appreciate the subtleties that enrich an experience.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I studied political science and accounting as an undergrad, worked as a financial auditor, and attended law school. These experiences may seem disconnected, but each stop along the way has shared the same core skills: I was communicating an idea, a process, a solution. This is what I do now, but in a new medium. One a little less boring ;)
 
-There are currently two themes built on Poole:
+Connect on [LinkedIn](https://www.linkedin.com/in/greglilley), hire on [dribbble](http://www.dribbble.com/greglilley), chat on [twitter](http://www.twitter.com/gregllly).
+<br>
+<br>
+<br>
+*This site was built with [Jekyll](http://jekyllrb.com/), scaffolded with [Yeoman](http://yeoman.io/), written in [sass](http://sass-lang.com/), processed with [gulp.js](http://gulpjs.com/), and lives at [Github](http://www.github.com/glilley).* 
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!

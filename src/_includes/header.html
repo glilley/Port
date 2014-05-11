@@ -1,0 +1,17 @@
+<header>
+				<h1 class="logo container" id="logo">
+            <a href="/" title="Home"><img src="/assets/images/logo.svg" alt="Logo"></a>
+        </h1>
+  			<div class="container clearfix">
+						<nav class="nav custom-wrap">
+							{% assign pages_list = site.pages %}
+						    {% for node in pages_list %}
+						      {% if node.title != null %}
+						        {% if node.layout == "page" or node.layout == "process"%}
+						          <a class="green sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title | downcase}}</a>
+						        {% endif %}
+						      {% endif %}
+						    {% endfor %}
+						</nav>
+				</div>
+		</header>

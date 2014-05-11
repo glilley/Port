@@ -1,9 +1,9 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
-title: Portfolio
-description: 
-tagline: 
-url: localhost:4000
+title: Greg Lilley
+description: I'm a designer focused on UI and UX. This portfolio contains recent work for Huitly, Native Canadian Ministries, and 3 Dollar Monsters. I'm currently available for hire. 
+tagline: Design Portfolio
+url: http://www.gregllly.com/blog/
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
@@ -14,7 +14,7 @@ destination: serve
 owner:
   name: glilley
   email: gregrlilley@gmail.com
-  bio: 
+  bio: Desinger
   twitter: http://www.twitter.com/gregllly
 
 # general setting for Jekyll

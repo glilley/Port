@@ -7,20 +7,23 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {{ site.title }} | {{ site.tagline }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+      {{ page.title }} | {{ site.title }}
     {% endif %}
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+  <link rel="stylesheet" href="/assets/stylesheets/home.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700|PT+Serif:300,400,400italic,700|PT+Sans:300,400">
-
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <!-- build:js ./assets/javascript/all.min.js -->
   <!-- <script src="/assets/javascript/javascript.js"></script> -->
   <!-- <script src="/assets/javascript/somejavascript.js"></script> -->
   <!-- endbuild -->
+  <script src="/assets/javascript/main.js"></script>
+    
+
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144-precomposed.png">

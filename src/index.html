@@ -14,21 +14,23 @@ title: Home
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {{ site.title }} | {{ site.tagline }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+      {{ site.title }} | {{ page.title }}  
     {% endif %}
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/assets/stylesheets/home.css">
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
   
 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <!-- build:js ./assets/javascript/all.min.js -->
   <!-- <script src="/assets/javascript/javascript.js"></script> -->
   <!-- <script src="/assets/javascript/somejavascript.js"></script> -->
   <!-- endbuild -->
+  <script src="/assets/javascript/main.js"></script>
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/apple-touch-icon-144-precomposed.png">
@@ -38,20 +40,24 @@ title: Home
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 </head>
-<body class="wrap">
-	 {% include sidebar.html %}
-		<div class="wrap">
+<body class="custom-wrap">
+	<header>
 				<h1 class="logo container">
             <a href="/" title="Home"><img src="/assets/images/logo.svg" alt="Logo"></a>
         </h1>
-  			<!-- <div class="container clearfix">
+  			<div class="container clearfix">
 						<nav class="nav">
-							<a class="green" href="#portfolio"><li>process</li></a>
-							<a class="green" href="#resume"><li>r&eacutesum&eacute</li></a>
+							{% assign pages_list = site.pages %}
+						    {% for node in pages_list %}
+						      {% if node.title != null %}
+						        {% if node.layout == "page" or node.layout == "process"%}
+						          <a class=" green sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title | downcase}}</a>
+						        {% endif %}
+						      {% endif %}
+						    {% endfor %}
 						</nav>
-				</div> -->
-			</div>
-			</header>
+				</div>
+		</header>
 			<section class="hero wrap">
 				<div class="container clearfix">
 						<p class="intro">Co-founder <a class="green" href="http://www.huit.ly" alt="check out our airbnb services at Huitly">@Huitly</a>, designer, front-end</p>
@@ -60,51 +66,20 @@ title: Home
 			<section class="work wrap">
 				<div class="container clearfix"><p>Recent Work</p>
 						<ul class="projects">
-							<a href="http://www.huit.ly"><li><img src="assets/images/huitly-website-design.jpg" alt="check out Huitly live site" title="Check out Huitly"><p>identity + design + build</p></li></a>
-						
-							<a href="http://www.ncmsupport.org"><li><div class="work-summary"><img src="assets/images/native-canadian-ministries-website-design.jpg" alt="check out NCM live site" title="Check out NCM"><div class="work-summary"><p>identity + design + build</p></li></a>
-							<a href="http://www.3dollarmonsters.com"><li><div class="work-summary"><img src="assets/images/3dollarmonsters-website-design.png" alt="check out my work" title="Check out 3 Dollar Monsters live site"><div class="work-summary"><p>side project</p></li></a>
-							<a href="http://www.ncmsupport.org"><li><div class="work-summary"><img src="assets/images/hire.png" alt="check out my work" title="Check out NCM"><div class="work-summary"><p>your project here</p></li></a>
+							<a href="http://www.huit.ly"><li><img src="assets/images/huitly-website-design.jpg" alt="check out my work on Huitly live site" title="Huitly live site"><p>identity + design + build</p></li></a>
+							<a href="http://www.ncmsupport.org" target="_blank"><li><div class="work-summary"><img src="assets/images/native-canadian-ministries-website-design.jpg" alt="check out my work on NCM live site" title="NCM live site"><div class="work-summary"><p>identity + design + build</p></li></a>
+							<a href="http://www.3dollarmonsters.com" target="_blank"><li><div class="work-summary"><img src="assets/images/3dollarmonsters-website-design.png" alt="check out my work on 3 Dollar Monsters live site" title="3 Dollar Monsters live site"><div class="work-summary"><p>side project</p></li></a>
+							<a href="http://www.dribbble.com/greglilley" target="_blank"><li><div class="work-summary"><img class="hire" src="assets/images/hire.svg" alt="Hire me on dribbble" title="Hire me on dribbble"><div class="work-summary"><p>your project here</p></li></a>
 						</ul>
 				</div>
 			</section>
-			<!-- <section class="info clearfix wrap">
-				<div class="container">		
-					<h2>so you like details...me too</h2>
-						<div class="downloads">
-							<a id="portfolio" class="portfolio" href="http://www.gregllly.com/greg-lilley-portfolio.zip" alt="download a case study of my process" onClick="_gap.push(['_trackEvent', 'Work', 'Download', 'Process']);">
-								<span class="download-icons pdf"></span>
-								<p class="green">process</p>
-							</a>
-							<a id="resume" class="resume" href="http://www.gregllly.com/greg-lilley-resume.zip" alt="download my resume" onClick="_gap.push(['_trackEvent', 'Work', 'Download', 'Resume']);">
-								<span class="download-icons resume"></span>
-								<p class="green">r&eacutesum&eacute</p>
-							</a>	
-						</div>
-					</div>
-				</div>	
-			</section> -->
-			<!-- <section class="coming-soon clearfix wrap">
-				<div class="container">
-					<h2>Side Projects</h2>
-					<div class="side-project inthewild">
-						<p>coming soon...</p>
-						<img src="assets/images/inthewild-logo-1.svg" alt="in the wild user experience is coming soon">
-					</div>
-					<div class="side-project threedollar">
-						<p>now live!</p>
-						<a href="http://www.3dollarmonsters.com" title="Check out 3 Dollar Monsters"><img src="assets/images/3dollarmonsters.svg" alt="3 dollar monsters - get a hand drawn postcard and coordinates to find your monster in the world"></a>
-					</div>
-				</div>
-			</section> -->
-			<footer class="clearfix wrap home-footer">
+	<footer class="clearfix wrap home-footer">
 			<div class="container">
-				<a class="social-icon twitter" href="http://www.twitter.com/gregllly" alt="Follow me on Twitter"></a>
-				<a class="social-icon linkedin" href="http://www.linkedin.com/in/greglilley" alt="Check out my LinkedIn profile"></a>
+				<a class="social-icon twitter" href="http://www.twitter.com/gregllly" target="_blank" alt="Follow me on Twitter"></a>
+				<a class="social-icon dribbble" href="http://www.dribbble.com/greglilley" target="_blank" alt="Check out my dribbble profile"></a>
+				<a class="social-icon linkedin" href="http://www.linkedin.com/in/greglilley" target="_blank" alt="Check out my LinkedIn profile"></a>
 				<p>Greg Lilley &copy 2014</p>
 			</div>
 	</footer>
-		
-	<label for="sidebar-checkbox" class="sidebar-toggle"></label>
 </body>
 </html>

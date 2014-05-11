@@ -25,25 +25,6 @@ summary {
 
 * {list-style:none;}
 
-/**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-
-audio,
-canvas,
-video {
-    display: inline-block;
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-
-audio:not([controls]) {
-    display: none;
-    height: 0;
-}
 
 /**
  * Address `[hidden]` styling not present in IE 8/9.
@@ -71,13 +52,6 @@ html {
     -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/**
- * Remove default margin.
- */
-
-body {
-    margin: 0;
-}
 
 /* ==========================================================================
    Links
@@ -236,25 +210,6 @@ img {
     border: 0;
 }
 
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-
-svg:not(:root) {
-    overflow: hidden;
-}
-
-/* ==========================================================================
-   Figures
-   ========================================================================== */
-
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-
-figure {
-    margin: 0;
-}
 
 /* ==========================================================================
    Forms

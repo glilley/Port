@@ -1,340 +1,282 @@
 /* 
 The main SCSS file for everything, yep
 */
-/*
- *                        ___
- *                       /\_ \
- *  _____     ___     ___\//\ \      __
- * /\ '__`\  / __`\  / __`\\ \ \   /'__`\
- * \ \ \_\ \/\ \_\ \/\ \_\ \\_\ \_/\  __/
- *  \ \ ,__/\ \____/\ \____//\____\ \____\
- *   \ \ \/  \/___/  \/___/ \/____/\/____/
- *    \ \_\
- *     \/_/
- *
- * Designed, built, and released under MIT license by @mdo. Learn more at
- * https://github.com/poole/poole.
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
  */
-/*
- * Contents
- *
- * Body resets
- * Custom type
- * Messages
- * Container
- * Masthead
- * Posts and pages
- * Pagination
- * Reverse layout
- * Themes
- */
-/*
- * Body resets
- *
- * Update the foundational and global aspects of the page.
- */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  list-style: none; }
 
-html, body {
-  margin: 0;
-  padding: 0; }
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden], template {
+  display: none; }
 
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5; }
-
-@media (min-width: 38rem) {
-  html {
-    font-size: 20px; } }
-
-body {
-  color: #515151;
-  background-color: #fff;
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%; }
+  /* 2 */ }
 
-/* No `:visited` state is required by default (browsers will use `a`) */
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
 a {
-  color: #268bd2;
-  text-decoration: none; }
-  a:hover, a:focus {
-    text-decoration: underline; }
+  background: transparent;
+  text-decoration: none;
+  color: inherit; }
 
-/* `:focus` is linked to `:hover` for basic accessibility */
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-  line-height: 1.25;
-  color: #888888;
-  text-rendering: optimizeLegibility; }
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
 
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active, a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
 h1 {
-  font-size: 2rem; }
+  font-size: 2em;
+  margin: 0.44em 0; }
 
-h2 {
-  margin-top: 1rem;
-  font-size: 1.5rem; }
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
 
-h3 {
-  margin-top: 1.5rem;
-  font-size: 1.25rem; }
-
-h4, h5, h6 {
-  margin-top: 1rem;
-  font-size: 1rem; }
-
-/* Body text */
-p {
-  margin-top: 0;
-  margin-bottom: 1rem; }
-
-strong {
-  color: #303030; }
-
-/* Lists */
-ul, ol, dl {
-  margin-top: 0;
-  margin-bottom: 1rem; }
-
-dt {
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b, strong {
   font-weight: bold; }
 
-dd {
-  margin-bottom: 0.5rem; }
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
 
-/* Misc */
-hr {
-  position: relative;
-  margin: 1.5rem 0;
-  border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff; }
+/**
+ * Address differences between Firefox and other browsers.
+ */
 
-abbr {
-  font-size: 85%;
-  font-weight: bold;
-  color: #555;
-  text-transform: uppercase; }
-  abbr[title] {
-    cursor: help;
-    border-bottom: 1px dotted #e5e5e5; }
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
 
-/* Code */
-code, pre {
-  font-family: Menlo, Monaco, "Courier New", monospace; }
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
 
-code {
-  padding: 0.25em 0.5em;
-  font-size: 85%;
-  color: #bf616a;
-  background-color: #f9f9f9;
-  border-radius: 3px; }
-
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
 pre {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  font-size: 0.8rem;
-  line-height: 1.4;
-  white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #f9f9f9; }
-  pre code {
-    padding: 0;
-    font-size: 100%;
-    color: inherit;
-    background-color: transparent; }
+  white-space: pre-wrap; }
 
-.highlight {
-  margin-bottom: 1rem;
-  border-radius: 4px; }
-  .highlight pre {
-    margin-bottom: 0; }
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
 
-/* Quotes */
-blockquote {
-  padding: 0.5rem 1rem;
-  margin: 0.8rem 0;
-  color: #7a7a7a;
-  border-left: 0.25rem solid #e5e5e5; }
-  blockquote p:last-child {
-    margin-bottom: 0; }
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
 
-@media (min-width: 30rem) {
-  blockquote {
-    padding-right: 5rem;
-    padding-left: 1.25rem; } }
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
 
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
 img {
-  display: block;
-  margin: 0 0 1rem;
-  border-radius: 5px; }
+  border: 0; }
 
-/* Tables */
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button, input, select, textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button, input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
 table {
-  margin-bottom: 1rem;
-  width: 100%;
-  border: 1px solid #e5e5e5;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  border-spacing: 0; }
 
-td, th {
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #e5e5e5; }
-
-tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9; }
-
-/*
- * Custom type
- *
- * Extend paragraphs with `.lead` for larger introductory text.
- */
-.lead {
-  font-size: 1.25rem;
-  font-weight: 300; }
-
-/*
- * Messages
- *
- * Show alert messages to users. You may add it to single elements like a `<p>`,
- * or to a parent if there are multiple elements to show.
- */
-.message {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  color: #717171;
-  background-color: #f9f9f9; }
-
-/*
- * Container
- *
- * Center the page content.
- */
-.template-container {
-  max-width: 38rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto; }
-
-/*
- * Masthead
- *
- * Super small header above the content for site name and short description.
- */
-.masthead {
-  padding-top: 1rem;
-  padding-bottom: 2rem; }
-
-.masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #505050; }
-  .masthead-title a {
-    color: #505050; }
-  .masthead-title small {
-    font-size: 75%;
-    font-weight: 400;
-    color: #c0c0c0;
-    letter-spacing: 0; }
-
-/*
- * Posts and pages
- *
- * Each post is wrapped in `.post` and is used on default and post layouts. Each
- * page is wrapped in `.page` and is only used on the page layout.
- */
-.page, .post {
-  margin-bottom: 4em; }
-
-/* Blog post or page title */
-.page-title {
-  color: #303030; }
-
-.post-title {
-  color: #888888; }
-  .post-title a {
-    color: #888888; }
-
-.page-title, .post-title {
-  margin-top: 0; }
-
-/* Meta data line below post title */
-.post-date {
-  display: block;
-  margin-top: -0.5rem;
-  margin-bottom: 1rem;
-  color: #9a9a9a; }
-
-/* Related posts */
-.related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid #eee; }
-
-.related-posts {
-  padding-left: 0;
-  list-style: none; }
-  .related-posts h3 {
-    margin-top: 0; }
-  .related-posts li small {
-    font-size: 75%;
-    color: #999; }
-  .related-posts li a:hover {
-    color: #268bd2;
-    text-decoration: none; }
-    .related-posts li a:hover small {
-      color: inherit; }
-
-/*
- * Pagination
- *
- * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
- * there are no more previous or next posts to show.
- */
-.pagination {
-  overflow: hidden;
-  /* clearfix */
-  margin-left: -1rem;
-  margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  color: #ccc;
-  text-align: center; }
-
-/* Pagination items can be `span`s or `a`s */
-.pagination-item {
-  display: block;
-  padding: 1rem;
-  border: 1px solid #eee; }
-  .pagination-item:first-child {
-    margin-bottom: -1px; }
-
-/* Only provide a hover state for linked pagination items */
-a.pagination-item:hover {
-  background-color: #f5f5f5; }
-
-@media (min-width: 30rem) {
-  .pagination {
-    margin: 3rem 0; }
-  .pagination-item {
-    float: left;
-    width: 50%; }
-    .pagination-item:first-child {
-      margin-bottom: 0;
-      border-top-left-radius: 4px;
-      border-bottom-left-radius: 4px; }
-    .pagination-item:last-child {
-      margin-left: -1px;
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px; } }
+a:target {
+  outline: none; }
 
 .hll {
   background-color: #ffffcc; }
@@ -525,43 +467,267 @@ a.pagination-item:hover {
 .css .o, .css .o + .nt, .css .nt + .nt {
   color: #999; }
 
-/*
- *  ___
- * /\_ \
- * \//\ \      __      ___   __  __    ___     ___
- *   \ \ \   /'__`\  /' _ `\/\ \/\ \  / __`\ /' _ `\
- *    \_\ \_/\ \_\.\_/\ \/\ \ \ \_\ \/\ \_\ \/\ \/\ \
- *    /\____\ \__/.\_\ \_\ \_\/`____ \ \____/\ \_\ \_\
- *    \/____/\/__/\/_/\/_/\/_/`/___/> \/___/  \/_/\/_/
- *                               /\___/
- *                               \/__/
- *
- * Designed, built, and released under MIT license by @mdo. Learn more at
- * https://github.com/poole/lanyon.
- */
-/*
- * Contents
- *
- * Global resets
- * Masthead
- * Sidebar
- * Slide effect
- * Posts and pages
- * Pagination
- * Reverse layout
- * Themes
- */
-/*
- * Global resets
- *
- * Update the foundational and global aspects of the page.
- */
-/* Prevent scroll on narrow devices */
-html, body {
-  overflow-x: hidden; }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0; }
 
-html, body {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif; }
+body {
+  color: #777;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  height: 100%; }
+
+/* No `:visited` state is required by default (browsers will use `a`) */
+.post {
+  /* Body text */
+  /* Lists */ }
+  .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    line-height: 1.25;
+    color: #999;
+    text-rendering: optimizeLegibility; }
+  .post h1 {
+    font-size: 2rem; }
+  .post h2 {
+    margin-top: 1rem 0;
+    font-size: 1.5rem; }
+  .post h3 {
+    margin: 1.5rem 0;
+    font-size: 1.25rem; }
+  .post h4, .post h5, .post h6 {
+    margin-top: 1rem;
+    font-size: 1rem; }
+  .post p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #777;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 1.6; }
+    @media (min-width: 30em) {
+      .post p {
+        font-size: 1.1rem;
+        line-height: 1.7; } }
+  .post em {
+    color: #777; }
+  .post strong {
+    color: #666; }
+  .post ul, .post ol, .post dl {
+    margin-top: 0;
+    margin-bottom: 1rem; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-bottom: 0.5rem; }
+
+/* Misc */
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff; }
+
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase; }
+  abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted #e5e5e5; }
+
+/* Code */
+code, pre {
+  font-family: Menlo, Monaco, "Courier New", monospace; }
+
+code {
+  padding: 0.25em 0.5em;
+  font-size: 85%;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px; }
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9; }
+  pre code {
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent; }
+
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 4px; }
+  .highlight pre {
+    margin-bottom: 0; }
+
+/* Quotes */
+blockquote {
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 0;
+  color: #7a7a7a;
+  border-left: 0.25rem solid #e5e5e5; }
+  blockquote p:last-child {
+    margin-bottom: 0; }
+
+@media (min-width: 30rem) {
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem; } }
+
+/* Tables */
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse; }
+
+td, th {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #e5e5e5; }
+
+tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9; }
+
+/*
+ * Custom type
+ *
+ * Extend paragraphs with `.lead` for larger introductory text.
+ */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300; }
+
+/*
+ * Messages
+ *
+ * Show alert messages to users. You may add it to single elements like a `<p>`,
+ * or to a parent if there are multiple elements to show.
+ */
+.message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: #717171;
+  background-color: #f9f9f9; }
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+.template-container {
+  max-width: 43.75rem;
+  margin-top: 2em;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%; }
+
+.page, .post {
+  margin-bottom: 0 !important; }
+
+/* Blog post or page title */
+.page-title {
+  color: #303030; }
+
+.post-title {
+  color: #888888; }
+  .post-title a {
+    color: #888888; }
+
+.page-title, .post-title {
+  margin-top: 0; }
+
+/* Meta data line below post title */
+.post-date {
+  display: block;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+  font-family: "Open Sans";
+  font-weight: 300; }
+
+/* Related posts */
+.related {
+  padding-top: 2rem;
+  border-top: 1px solid #eee; }
+
+.related-posts {
+  padding-left: 0;
+  list-style: none; }
+  .related-posts h3 {
+    margin-bottom: 0;
+    padding: 0.2em 0; }
+  .related-posts li small {
+    font-size: 75%;
+    color: #999; }
+
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+.pagination {
+  overflow: hidden;
+  /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #ccc;
+  text-align: center; }
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #eee; }
+  .pagination-item:first-child {
+    margin-bottom: -1px; }
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+  background-color: #f5f5f5; }
+
+@media (min-width: 30rem) {
+  .pagination {
+    margin: 3rem 0; }
+  .pagination-item {
+    float: left;
+    width: 50%; }
+    .pagination-item:first-child {
+      margin-bottom: 0;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px; }
+    .pagination-item:last-child {
+      margin-left: -1px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px; } }
+
+body {
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -572,104 +738,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #abd69d; }
 
-/*
- * Wrapper
- *
- * The wrapper is used to position site content when the sidebar is toggled. We
- * use an outter wrap to position the sidebar without interferring with the
- * regular page content.
- */
-.wrap {
-  position: relative; }
-
-/*
- * template-container
- *
- * Center the page content.
- */
-.template-container {
-  max-width: 28rem; }
-
-@media (min-width: 38rem) {
-  .template-container {
-    max-width: 32rem; } }
-
-@media (min-width: 56rem) {
-  .template-container {
-    max-width: 38rem; } }
-
-/*
- * Masthead
- *
- * Super small header above the content for site name and short description.
- */
-.masthead-title {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #505050; }
-  .masthead-title a {
-    color: #505050; }
-  .masthead-title small {
-    font-size: 75%;
-    font-weight: 400;
-    color: #c0c0c0;
-    letter-spacing: 0; }
-
-@media (max-width: 48rem) {
-  .masthead-title {
-    text-align: center; }
-    .masthead-title small {
-      display: none; } }
-
-/*
- * Sidebar
- *
- * The sidebar is the drawer, the item we are toggling with our handy hamburger
- * button in the corner of the page.
- *
- * This particular sidebar implementation was inspired by Chris Coyier's
- * "Offcanvas Menu with CSS Target" article, and the checkbox variation from the
- * comments by a reader. It modifies both implementations to continue using the
- * checkbox (no change in URL means no polluted browser history), but this uses
- * `position` for the menu to avoid some potential content reflow issues.
- *
- * Source: http://css-tricks.com/off-canvas-menu-with-css-target/#comment-207504
- */
-/* Style and "hide" the sidebar */
-.sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: -14rem;
-  width: 14rem;
-  visibility: hidden;
-  overflow-y: auto;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  font-size: 0.875rem;
-  /* 15px */
-  color: rgba(255, 255, 255, 0.6);
-  background-color: #202020;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  .sidebar a {
-    font-weight: normal;
-    color: #fff; }
-
-@media (min-width: 30rem) {
-  .sidebar {
-    font-size: 0.75rem;
-    /* 14px */ } }
-
-/* Sidebar content */
-.sidebar-item {
-  padding: 1rem; }
-  .sidebar-item p:last-child {
-    margin-bottom: 0; }
-
-/* Sidebar nav */
-.sidebar-nav {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-
 .sidebar-nav-item {
   display: block;
   padding: 0.5rem 1rem;
@@ -678,90 +746,6 @@ a {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.1);
     border-color: transparent; }
-
-a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: transparent; }
-
-@media (min-width: 48rem) {
-  .sidebar-item {
-    padding: 1.5rem; }
-  .sidebar-nav-item {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem; } }
-
-/* Hide the sidebar checkbox that we toggle with `.sidebar-toggle` */
-.sidebar-checkbox {
-  display: none; }
-
-/* Style the `label` that we use to target the `.sidebar-checkbox` */
-.sidebar-toggle {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  display: block;
-  width: 2.2rem;
-  padding: 0.5rem 0.65rem;
-  color: #505050;
-  background-color: #fff;
-  border-radius: 4px;
-  cursor: pointer; }
-  .sidebar-toggle:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-bottom: 0.125rem;
-    border-top: 0.375rem double;
-    border-bottom: 0.125rem solid;
-    /* Make the border inside the box */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; }
-  .sidebar-toggle:active {
-    color: #fff;
-    background-color: #505050; }
-
-#sidebar-checkbox:checked ~ .sidebar-toggle {
-  color: #fff;
-  background-color: #505050; }
-
-@media (min-width: 30.1rem) {
-  .sidebar-toggle {
-    position: absolute;
-    width: 2.25rem; }
-    .sidebar-toggle:before {
-      padding-bottom: 0.15rem;
-      border-top-width: 0.45rem;
-      border-bottom-width: 0.15rem; } }
-
-/* Slide effect
- *
- * Handle the sliding effects of the sidebar and content in one spot, seperate
- * from the default styles.
- *
- * As an a heads up, we don't use `transform: translate3d()` here because when
- * mixed with `position: fixed;` for the sidebar toggle, it creates a new
- * containing block. Put simply, the fixed sidebar toggle behaves like
- * `position: absolute;` when transformed.
- *
- * Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.
- */
-.wrap, .sidebar, .sidebar-toggle {
-  -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.wrap, .sidebar-toggle {
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out; }
-
-#sidebar-checkbox:checked + .sidebar {
-  visibility: visible; }
-#sidebar-checkbox:checked ~ .sidebar, #sidebar-checkbox:checked ~ .wrap, #sidebar-checkbox:checked ~ .sidebar-toggle {
-  -webkit-transform: translateX(14rem);
-  -ms-transform: translateX(14rem);
-  transform: translateX(14rem); }
 
 /*
  * Posts and pages
@@ -806,11 +790,6 @@ a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
   .related-posts li small {
     font-size: 75%;
     color: #999; }
-  .related-posts li a:hover {
-    color: #268bd2;
-    text-decoration: none; }
-    .related-posts li a:hover small {
-      color: inherit; }
 
 /*
  * Pagination
@@ -853,77 +832,6 @@ a.pagination-item:hover {
       margin-left: -1px;
       border-top-right-radius: 4px;
       border-bottom-right-radius: 4px; } }
-
-/*
- * Reverse layout
- *
- * Flip the orientation of the page by placing the `.sidebar` and sidebar toggle
- * on the right side.
- */
-.layout-reverse .sidebar {
-  left: auto;
-  right: -14rem; }
-.layout-reverse .sidebar-toggle {
-  left: auto;
-  right: 1rem; }
-.layout-reverse #sidebar-checkbox:checked ~ .sidebar, .layout-reverse #sidebar-checkbox:checked ~ .wrap, .layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
-  -webkit-transform: translateX(-14rem);
-  -ms-transform: translateX(-14rem);
-  transform: translateX(-14rem); }
-
-/*
- * Themes
- *
- * Apply custom color schemes by adding the appropriate class to the `body`.
- * Based on colors from Base16: http://chriskempson.github.io/base16/#default.
- */
-/* Red */
-.theme-base-08 .sidebar, .theme-base-08 .sidebar-toggle:active, .theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #ac4142; }
-.theme-base-08 .template-container a, .theme-base-08 .sidebar-toggle, .theme-base-08 .related-posts li a:hover {
-  color: #ac4142; }
-
-/* Orange */
-.theme-base-09 .sidebar, .theme-base-09 .sidebar-toggle:active, .theme-base-09 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #d28445; }
-.theme-base-09 .template-container a, .theme-base-09 .sidebar-toggle, .theme-base-09 .related-posts li a:hover {
-  color: #d28445; }
-
-/* Yellow */
-.theme-base-0a .sidebar, .theme-base-0a .sidebar-toggle:active, .theme-base-0a #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #f4bf75; }
-.theme-base-0a .template-container a, .theme-base-0a .sidebar-toggle, .theme-base-0a .related-posts li a:hover {
-  color: #f4bf75; }
-
-/* Green */
-.theme-base-0b .sidebar, .theme-base-0b .sidebar-toggle:active, .theme-base-0b #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #90a959; }
-.theme-base-0b .template-container a, .theme-base-0b .sidebar-toggle, .theme-base-0b .related-posts li a:hover {
-  color: #90a959; }
-
-/* Cyan */
-.theme-base-0c .sidebar, .theme-base-0c .sidebar-toggle:active, .theme-base-0c #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #75b5aa; }
-.theme-base-0c .template-container a, .theme-base-0c .sidebar-toggle, .theme-base-0c .related-posts li a:hover {
-  color: #75b5aa; }
-
-/* Blue */
-.theme-base-0d .sidebar, .theme-base-0d .sidebar-toggle:active, .theme-base-0d #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #6a9fb5; }
-.theme-base-0d .template-container a, .theme-base-0d .sidebar-toggle, .theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5; }
-
-/* Magenta */
-.theme-base-0e .sidebar, .theme-base-0e .sidebar-toggle:active, .theme-base-0e #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #aa759f; }
-.theme-base-0e .template-container a, .theme-base-0e .sidebar-toggle, .theme-base-0e .related-posts li a:hover {
-  color: #aa759f; }
-
-/* Brown */
-.theme-base-0f .sidebar, .theme-base-0f .sidebar-toggle:active, .theme-base-0f #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #8f5536; }
-.theme-base-0f .template-container a, .theme-base-0f .sidebar-toggle, .theme-base-0f .related-posts li a:hover {
-  color: #8f5536; }
 
 .container {
   margin: 0 auto;
@@ -969,28 +877,1168 @@ footer p {
 .linkedin {
   background-position: 47.368% -0.323%; }
 
+header {
+  width: 100%; }
+
+.logo img {
+  padding-top: 0;
+  margin: 0.5em auto 0 auto;
+  text-align: center;
+  display: block;
+  width: 6.5em; }
+  @media (min-width: 30em) {
+    .logo img {
+      width: initial; } }
+
+.nav {
+  display: block;
+  text-align: center;
+  margin: 0 auto; }
+  .nav li {
+    display: inline-block; }
+  .nav a {
+    font-family: "Open Sans";
+    color: #abd69d;
+    display: inline-block;
+    padding: 0;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300; }
+    @media (min-width: 38em) {
+      .nav a {
+        padding-top: 1rem; } }
+
+.green {
+  color: #abd69d; }
+  .green:hover {
+    color: #cae5c1; }
+  .green:active {
+    color: #bbdeaf; }
+
+.sidebar-nav-item {
+  display: block;
+  padding-bottom: 0.15rem;
+  margin: 0 0.5em; }
+  .sidebar-nav-item.active {
+    text-decoration: none;
+    border-bottom: 2px solid #abd69d; }
+
+a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
+  text-decoration: none; }
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+* {
+  list-style: none; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden], template {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
+  text-decoration: none;
+  color: inherit; }
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active, a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.44em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button, input, select, textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button, input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a:target {
+  outline: none; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url(../js/boxsizing.htc); }
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 60em; }
+
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
   *zoom: 1; }
 
-.masthead {
-  padding-bottom: 0.5rem; }
 
-.logo {
-  width: auto;
-  margin: 0.5em auto 0 auto !important;
+.custom-wrap h2, .custom-wrap p, .custom-wrap a {
+  font-family: "Open sans", sans-serif;
+  font-weight: 300; }
+
+.custom-wrap h3, .info h2 {
+  font-family: "Open sans", sans-serif;
+  font-weight: 600; }
+
+.custom-wrap h1 {
+  font-family: "Open sans", sans-serif;
+  font-weight: 700; }
+
+.custom-wrap p {
+  color: #999; }
+.custom-wrap h1 {
+  font-size: 3em; }
+.custom-wrap a {
+  color: #abd69d; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0; }
+
+body {
+  color: #777;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  height: 100%; }
+
+/* No `:visited` state is required by default (browsers will use `a`) */
+.post {
+  /* Body text */
+  /* Lists */ }
+  .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    line-height: 1.25;
+    color: #999;
+    text-rendering: optimizeLegibility; }
+  .post h1 {
+    font-size: 2rem; }
+  .post h2 {
+    margin-top: 1rem 0;
+    font-size: 1.5rem; }
+  .post h3 {
+    margin: 1.5rem 0;
+    font-size: 1.25rem; }
+  .post h4, .post h5, .post h6 {
+    margin-top: 1rem;
+    font-size: 1rem; }
+  .post p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #777;
+    font-family: "Open Sans";
+    font-weight: 400;
+    line-height: 1.6; }
+    @media (min-width: 30em) {
+      .post p {
+        font-size: 1.1rem;
+        line-height: 1.7; } }
+  .post em {
+    color: #777; }
+  .post strong {
+    color: #666; }
+  .post ul, .post ol, .post dl {
+    margin-top: 0;
+    margin-bottom: 1rem; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-bottom: 0.5rem; }
+
+/* Misc */
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff; }
+
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase; }
+  abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted #e5e5e5; }
+
+/* Code */
+code, pre {
+  font-family: Menlo, Monaco, "Courier New", monospace; }
+
+code {
+  padding: 0.25em 0.5em;
+  font-size: 85%;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px; }
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9; }
+  pre code {
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent; }
+
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 4px; }
+  .highlight pre {
+    margin-bottom: 0; }
+
+/* Quotes */
+blockquote {
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 0;
+  color: #7a7a7a;
+  border-left: 0.25rem solid #e5e5e5; }
+  blockquote p:last-child {
+    margin-bottom: 0; }
+
+@media (min-width: 30rem) {
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem; } }
+
+/* Tables */
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse; }
+
+td, th {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #e5e5e5; }
+
+tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9; }
+
+/*
+ * Custom type
+ *
+ * Extend paragraphs with `.lead` for larger introductory text.
+ */
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300; }
+
+/*
+ * Messages
+ *
+ * Show alert messages to users. You may add it to single elements like a `<p>`,
+ * or to a parent if there are multiple elements to show.
+ */
+.message {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: #717171;
+  background-color: #f9f9f9; }
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+.template-container {
+  max-width: 43.75rem;
+  margin-top: 2em;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%; }
+
+.page, .post {
+  margin-bottom: 0 !important; }
+
+/* Blog post or page title */
+.page-title {
+  color: #303030; }
+
+.post-title {
+  color: #888888; }
+  .post-title a {
+    color: #888888; }
+
+.page-title, .post-title {
+  margin-top: 0; }
+
+/* Meta data line below post title */
+.post-date {
+  display: block;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+  font-family: "Open Sans";
+  font-weight: 300; }
+
+/* Related posts */
+.related {
+  padding-top: 2rem;
+  border-top: 1px solid #eee; }
+
+.related-posts {
+  padding-left: 0;
+  list-style: none; }
+  .related-posts h3 {
+    margin-bottom: 0;
+    padding: 0.2em 0; }
+  .related-posts li small {
+    font-size: 75%;
+    color: #999; }
+
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+.pagination {
+  overflow: hidden;
+  /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #ccc;
+  text-align: center; }
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #eee; }
+  .pagination-item:first-child {
+    margin-bottom: -1px; }
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+  background-color: #f5f5f5; }
+
+@media (min-width: 30rem) {
+  .pagination {
+    margin: 3rem 0; }
+  .pagination-item {
+    float: left;
+    width: 50%; }
+    .pagination-item:first-child {
+      margin-bottom: 0;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px; }
+    .pagination-item:last-child {
+      margin-left: -1px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px; } }
+
+body {
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #888888;
+  letter-spacing: -0.025rem; }
+
+a {
+  color: #abd69d; }
+
+.sidebar-nav-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  .sidebar-nav-item.active {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: transparent; }
+
+/*
+ * Posts and pages
+ *
+ * Each post is wrapped in `.post` and is used on default and post layouts. Each
+ * page is wrapped in `.page` and is only used on the page layout.
+ */
+.page, .post {
+  margin-bottom: 4em; }
+
+/* Blog post or page title */
+.page-title {
+  color: #303030; }
+
+.post-title {
+  color: #888888; }
+  .post-title a {
+    color: #888888;
+    text-decoration: none; }
+
+.page-title, .post-title {
+  margin-top: 0; }
+
+/* Meta data line below post title */
+.post-date {
+  display: block;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a; }
+
+/* Related posts */
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee; }
+
+.related-posts {
+  padding-left: 0;
+  list-style: none; }
+  .related-posts h3 {
+    margin-top: 0; }
+  .related-posts li small {
+    font-size: 75%;
+    color: #999; }
+
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+.pagination {
+  overflow: hidden;
+  /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  color: #ccc;
+  text-align: center; }
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #eee; }
+  .pagination-item:first-child {
+    margin-bottom: -1px; }
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+  background-color: #f5f5f5; }
+
+@media (min-width: 30rem) {
+  .pagination {
+    margin: 3rem 0; }
+  .pagination-item {
+    float: left;
+    width: 50%; }
+    .pagination-item:first-child {
+      margin-bottom: 0;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px; }
+    .pagination-item:last-child {
+      margin-left: -1px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px; } }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+header {
+  width: 100%; }
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 60em;
+  position: relative; }
+
+.logo img {
+  padding-top: 0;
+  margin: 0.5em auto 0 auto;
   text-align: center;
-  display: inherit;
-  width: 5.5em; }
+  display: block;
+  max-width: 6.5em; }
   @media (min-width: 30em) {
-    .logo {
+    .logo img {
       width: initial; } }
 
-.page h1 {
-  margin: 0 0 1em 0; }
+.nav {
+  display: block;
+  text-align: center;
+  margin: 0 auto; }
+  .nav li {
+    display: inline-block; }
+  .nav a {
+    display: inline-block;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300; }
 
+.green {
+  color: #abd69d; }
+  .green:hover {
+    color: #cae5c1; }
+  .green:active {
+    color: #bbdeaf; }
+
+.work {
+  background-color: #f9f9f9; }
+  @media (min-width: 43.75em) {
+    .work {
+      padding-bottom: 2em; } }
+
+.work p {
+  margin: 0;
+  padding: 1em 0 1em 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 300; }
+
+.work-summary {
+  color: rgba(0, 0, 0, 0.6); }
+  .work-summary span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red; }
+
+.intro {
+  line-height: 1.35;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0.4em 0 1.5em 0;
+  font-weight: 300; }
+  @media (min-width: 38em) {
+    .intro {
+      margin: 1em 0 2.5em 0; } }
+
+.projects {
+  display: block;
+  padding: 0;
+  margin: 0; }
+  .projects li {
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 0; }
+    @media (min-width: 43.75em) {
+      .projects li {
+        float: left;
+        width: 50%;
+        margin: 0;
+        padding: 0 0.5% 0 0.5%; } }
+  .projects img {
+    width: 100%; }
+  .projects p {
+    padding: 1em 0 1em 0;
+    text-align: center;
+    color: #999;
+    font-size: 1em;
+    font-weight: 300; }
+
+.projects li:hover {
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; }
+.projects li:active {
+  -moz-opacity: 0.95;
+  opacity: 0.95;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)"; }
+
+.info h2 {
+  color: red;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding: 0.2em 0 0 0; }
+.info a {
+  text-align: center;
+  float: left;
+  margin: 1em; }
+.info p {
+  float: left;
+  font-size: 1.5em;
+  padding: 0 0 0 0.5em;
+  font-weight: 300; }
+.info span {
+  float: left; }
+
+.downloads {
+  width: 13em;
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+  @media (min-width: 25em) {
+    .downloads {
+      width: 23.6em; } }
+
+.coming-soon {
+  background-color: #f9f9f9; }
+  .coming-soon h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 1em 0 0 0; }
+  .coming-soon p {
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 1.1em; }
+  .coming-soon .side-project {
+    display: block; }
+    @media (min-width: 56.25em) {
+      .coming-soon .side-project {
+        float: left;
+        max-width: 50%; } }
+  .coming-soon img {
+    padding: 0.1em;
+    width: 100%; }
+    .coming-soon img:last-child {
+      padding-bottom: 2em; }
+    @media (min-width: 56.25em) {
+      .coming-soon img {
+        padding: 0em 1em;
+        margin-bottom: 2.5em;
+        width: 100%; } }
+
+.threedollar {
+  transition: opacity 0.5s; }
+  .threedollar p {
+    color: #abd69d; }
+
+.portfolio, .resume, .threedollar img {
+  transition: opacity 0.5s; }
+  .portfolio:hover, .resume:hover, .threedollar img:hover {
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; }
+  .portfolio:active, .resume:active, .threedollar img:active {
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; }
+
+.home-footer {
+  height: 4em; }
+  .home-footer p {
+    font-family: "Open Sans";
+    color: #999;
+    float: right;
+    padding: 1.5em 0 0 1em;
+    font-size: 0.9em;
+    font-weight: 300; }
+
+.wrapper {
+  max-width: 43.75rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0.5em; }
+
+.social-icon {
+  float: left;
+  display: inline;
+  width: 2em;
+  height: 1.75em;
+  margin: 1em 0.4em;
+  background: url(../images/icons_1.svg) no-repeat; }
+  @media (min-width: 30em) {
+    .social-icon {
+      margin: 1em; } }
+  .social-icon:hover {
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; }
+  .social-icon:active {
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; }
+
+.twitter {
+  background-position: 0% 0.448%; }
+
+.linkedin {
+  background-position: 47.368% -0.323%; }
+
+.dribbble {
+  background-position: 92.368% -0.323%; }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -14rem;
+  width: 14rem;
+  visibility: hidden;
+  overflow-y: auto;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  /* 15px */
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #202020;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .sidebar a {
+    font-weight: 300;
+    color: #fff;
+    font-family: "Open Sans"; }
+
+@media (min-width: 30rem) {
+  .sidebar {
+    font-size: 0.5rem;
+    /* 14px */ } }
+
+/* Sidebar content */
+.sidebar-item {
+  padding: 0.5rem; }
+  .sidebar-item p:last-child {
+    margin-bottom: 0; }
+
+/* Sidebar nav */
+.sidebar-nav-item {
+  display: block;
+  padding: 0 0 0.15em 0;
+  margin: 0 0.5em; }
+  .sidebar-nav-item.active {
+    text-decoration: none;
+    border-bottom: 2px solid #abd69d; }
+
+a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #999;
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  margin-top: 1rem 0;
+  font-size: 1.5rem; }
+
+h3 {
+  margin: 1.5rem 0;
+  font-size: 1.25rem; }
+
+h4, h5, h6 {
+  margin-top: 1rem;
+  font-size: 1rem; }
+
+/* Body text */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #777;
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 1.6; }
+  @media (min-width: 30em) {
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6; } }
+
+em {
+  color: #777; }
+
+strong {
+  color: #303030; }
+
+/* Lists */
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-bottom: 0.5rem; }
+
+/* Misc */
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff; }
+
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase; }
+  abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted #e5e5e5; }
+
+/* Code */
+code, pre {
+  font-family: Menlo, Monaco, "Courier New", monospace; }
+
+code {
+  padding: 0.25em 0.5em;
+  font-size: 85%;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px; }
+
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9; }
+  pre code {
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent; }
+
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 4px; }
+  .highlight pre {
+    margin-bottom: 0; }
+
+/* Quotes */
+blockquote {
+  padding: 0.5rem 1rem;
+  margin: 0.8rem 0;
+  color: #7a7a7a;
+  border-left: 0.25rem solid #e5e5e5; }
+  blockquote p:last-child {
+    margin-bottom: 0; }
+
+@media (min-width: 30rem) {
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem; } }
+
+/* Tables */
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse; }
+
+td, th {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #e5e5e5; }
+
+tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9; }
+
+.scrollTop {
+  position: fixed;
+  right: 1em;
+  bottom: 4em;
+  z-index: 100;
+  width: 3.125em;
+  height: 3.125em;
+  background: url(../images/icons_1.svg) no-repeat;
+  background-position: 100% 100%; }
+
+.process-page h1, .process-page h2, .process-page h3, .process-page h4, .process-page h5, .process-page h6 {
+  font-family: "Open Sans";
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility; }
+.process-page .container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 50em;
+  position: relative; }
+.process-page h1 {
+  font-size: 2rem; }
+.process-page h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem; }
+.process-page h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem; }
+.process-page h4, .process-page h5, .process-page h6 {
+  margin-top: 1rem;
+  font-size: 1rem; }
 .process-page h1 {
   color: #999;
   margin-top: 0; }
@@ -1004,22 +2052,109 @@ footer p {
     vertical-align: top;
     width: 25%;
     margin-right: -0.3em; }
+    @media (min-width: 30em) {
+      .process-page ul li {
+        text-align: left;
+        width: 25%; } }
   .process-page ul p {
+    width: 5em;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-size: 0.8rem; }
+    @media (min-width: 56.25em) {
+      .process-page ul p {
+        font-size: 1rem; } }
+  .process-page ul h3 {
+    width: 4.4em;
+    text-align: left;
+    font-size: 1.25rem;
+    margin: 1em auto; }
+    @media (min-width: 56.25em) {
+      .process-page ul h3 {
+        font-size: 1.25rem; } }
 .process-page a {
   color: #abd69d; }
-.process-page figure {
-  float: right;
-  margin: 0;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: -0.3em;
-  width: 50%; }
 .process-page img {
   max-width: 100%;
   border-radius: 0;
+  display: block;
   margin: 0 auto; }
 .process-page figcaption {
-  font-size: 0.75rem;
+  font-family: "Open Sans";
+  font-size: 0.8rem;
+  text-align: center;
+  color: #999999;
+  font-style: italic;
+  padding: 0.5rem 0; }
+.process-page section {
+  padding: 2em 0; }
+.process-page .overview {
+  display: block;
+  padding-bottom: 2em; }
+  .process-page .overview .overview-content {
+    float: initial;
+    display: block;
+    width: 80%;
+    margin: 0 auto; }
+  .process-page .overview ul {
+    display: block;
+    float: initial;
+    width: 100%;
+    overflow: hidden;
+    height: auto; }
+    @media (min-width: 43.75em) {
+      .process-page .overview ul {
+        width: 100%;
+        max-width: 40em; } }
+    .process-page .overview ul h3 {
+      font-size: 1rem; }
+      @media (min-width: 30em) {
+        .process-page .overview ul h3 {
+          font-size: 1.25rem; } }
+    .process-page .overview ul p {
+      font-size: 0.8rem; }
+      @media (min-width: 30em) {
+        .process-page .overview ul p {
+          font-size: 1.1rem; } }
+.process-page .content-format {
+  float: initial;
+  display: block;
+  width: 100%;
+  margin: 0 auto; }
+  @media (min-width: 43.75em) {
+    .process-page .content-format {
+      width: 80%; } }
+.process-page .stripe {
+  background-color: #f9f9f9; }
+.process-page figure {
+  display: none; }
+.process-page .inline-image {
+  display: block;
+  padding: 0;
+  margin: 2em auto;
+  height: auto;
+  width: auto; }
+  .process-page .inline-image.google-doc {
+    padding: 0 0.5em; }
+.process-page .download-process {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; }
+  .process-page .download-process p {
+    color: #abd69d;
+    position: relative;
+    top: 4.6em; }
+    @media (min-width: 30em) {
+      .process-page .download-process p {
+        top: 4.3em; } }
+.process-page .download-icons {
+  background: url(../images/icons_1.svg) no-repeat;
+  width: 4.34em;
+  height: 4.75em;
+  display: inline-block; }
+.process-page .pdf {
+  background-position: -10% 100%; }
+
+.blog-coming-soon {
   text-align: center; }

@@ -55,7 +55,7 @@ gulp.task('jekyll-serve', function() {
 // don't end up publishing your drafts or future posts
 gulp.task('jekyll-build', function() {
   return gulp.src('')
-    .pipe($.exec("jekyll build --config _config.yml,_config.build.yml"));
+    .pipe($.exec("jekyll build --config _config.yml, _config.build.yml"));
 });
 
 // Runs every time a HTML file is changed in the './src' directory
@@ -125,7 +125,7 @@ gulp.task('htmlify', function() {
 // Move the '.txt' and '.xml' files from './serve' to './site'
 gulp.task('move', function() {
   return gulp.src(['./serve/**/*.xml', './serve/**/*.txt'])
-    .pipe(gulp.dest('./site'))
+     .pipe(gulp.dest('./site'))
 });
 
 // Optimize the CSS with Autoprefixer and CSS Optimizer

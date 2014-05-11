@@ -7,16 +7,18 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+      {{ site.title }} | {{ site.tagline }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+      {{ site.title }} | {{ page.title }}  
     {% endif %}
   </title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/stylesheets/home.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700|PT+Serif:300,400,400italic,700|PT+Sans:300,400|Card:400">
   
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="/assets/javascript/main.js"></script>
 
   <!-- build:js ./assets/javascript/all.min.js -->
   <!-- <script src="/assets/javascript/javascript.js"></script> -->

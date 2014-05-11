@@ -24,6 +24,9 @@
 }
 
  @mixin breakpoint($point) {
+  @if $point == grandpa-bear {
+    @media (min-width: 64em) { @content; } // = 1100px
+  }
   @if $point == papa-bear {
     @media (min-width: 60em) { @content; } // = 900px
   }

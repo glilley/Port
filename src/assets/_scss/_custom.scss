@@ -1,79 +1,66 @@
-$grey: #999;
 $green: #abd69d;
 
-.clearfix {
-	&:after {
-    content: "";
-    display: table;
-    clear: both;
-	*zoom: 1;
-	}
-}
-.masthead {
-	padding-bottom:.5rem;
+header {
+	width: 100%;
 }
 .logo {
-	width: auto;
-	margin: .5em auto 0 auto;
-	text-align: center;
-	display: inherit;
-	width: 5.5em;
-  @include breakpoint(baby-bear){
-    width: initial;
+  img{
+    // width: auto;
+    padding-top: 0;
+  	margin: .5em auto 0 auto;
+  	text-align: center;
+  	display: block;
+  	width: 6.5em;
+    @include breakpoint(baby-bear){
+      width: initial;
+    }
   }
 }
-.page {
-	h1 {
-		margin: 0 0 1em 0;
+.nav {
+  display: block;
+  text-align: center;
+	margin: 0 auto;
+  li {
+    display: inline-block;
+  }
+	a { 
+		font-family: "Open Sans";
+		color: $green;
+    display: inline-block;
+    padding: 0;
+		padding-top: 1rem;
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 300;
+		@include breakpoint(sister-bear){
+			padding-top: 1rem;
+		}
 	}
 }
-.process-page {
-	h1 {
-		color: $grey;
-		margin-top: 0;
+.green {
+  color: $green;
+	&:hover{
+		color: lighten($green, 10%);
+}
+	&:active{
+		color: lighten($green, 5%);
 	}
-	h2, h3 {
-		color: $green;
-	}
-	ul {
-		margin: 0 auto;
-		padding-left: 0;
-		li {
-			display: inline-block;
-			vertical-align: top;
-			width: 25%;
-			margin-right: -.3em;
-			// margin: 0 auto;
-		}
-		p {
-			display: block;
-			margin: 0 auto;
-		}
-	}
-	a {
-		color: $green;
-	}
-	figure {
-		float: right;
-		margin: 0;
-		display: inline-block;
-		vertical-align: top;
-		margin-right: -.3em;
-		width: 50%;
-	}
-	img {
-		max-width: 100%;
-		border-radius: 0;
-		margin: 0 auto;
-	}
-	// figure {
-	// 	float: right;
-	// 	margin: 0;
-	// }
-	figcaption {
-		font-size: .75rem;
-		text-align: center;
-		// max-width: 70%;
-	}
+}
+.sidebar-nav-item {
+  display: block;
+  // padding: .5rem 1rem;
+  padding-bottom: .15rem;
+  margin: 0 .5em;
+  // border-top: 1px solid rgba(255, 255, 255, 0.1);
+  &.active {
+    text-decoration: none;
+    border-bottom: 2px solid $green;    
+  }
 }
 
+a.sidebar-nav-item {
+  &:hover, &:focus {
+    text-decoration: none;
+ 
+  }
+}
