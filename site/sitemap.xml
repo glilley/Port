@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://www.gregllly.com/blog//</loc>
+    <lastmod>2014-05-09T15:01:25-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+    <url>
+      <loc>http://www.gregllly.com/blog//jekyll/2014/04/23/per-app-iphone-passcode/</loc>
+      
+        <lastmod>2014-04-23T00:00:00-07:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://www.gregllly.com/blog//jekyll/2014/03/03/welcome-to-jekyll/</loc>
+      
+        <lastmod>2014-03-03T00:00:00-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://www.gregllly.com/blog//jekyll/2014/03/03/welcome-test/</loc>
+      
+        <lastmod>2014-03-03T00:00:00-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://www.gregllly.com/blog//jekyll/poole/2014/03/02/introducing-poole/</loc>
+      
+        <lastmod>2014-03-02T00:00:00-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>http://www.gregllly.com/blog//jekyll/example/2014/03/01/2014-03-01-example-content/</loc>
+      
+        <lastmod>2014-03-01T00:00:00-08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+  
+  <url>
+    <loc>http://www.gregllly.com/blog//404/</loc>
+    
+      <lastmod>2014-05-09T15:01:25-07:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.gregllly.com/blog//about/</loc>
+    
+      <lastmod>2014-05-09T15:01:25-07:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.gregllly.com/blog//atom.xml</loc>
+    
+      <lastmod>2014-05-09T15:01:25-07:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.gregllly.com/blog//blog/</loc>
+    
+      <lastmod>2014-05-09T15:01:25-07:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.gregllly.com/blog//</loc>
+    
+      <lastmod>2014-05-09T15:01:25-07:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.gregllly.com/blog//process/</loc>
+    
+      <lastmod>2014-05-09T15:01:25-07:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.gregllly.com/blog//sitemap.xml</loc>
+    
+      <lastmod>2014-05-09T15:01:25-07:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+</urlset>
