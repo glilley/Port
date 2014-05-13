@@ -10,7 +10,7 @@ I studied political science and accounting as an undergrad, worked as a financia
 Connect on [LinkedIn](https://www.linkedin.com/in/greglilley), hire on [dribbble](http://www.dribbble.com/greglilley), chat on [twitter](http://www.twitter.com/gregllly).
 <br>
 <br>
-<br>
 
-<span class="small">This site was built with a[Jekyll](http://jekyllrb.com/), scaffolded with [Yeoman](http://yeoman.io/), written in [sass](http://sass-lang.com/), and processed with [gulp.js](http://gulpjs.com/).</span>
+
+<span class="small">This site was built with [Jekyll](http://jekyllrb.com/), scaffolded with [Yeoman](http://yeoman.io/), written in [sass](http://sass-lang.com/), and processed with [gulp.js](http://gulpjs.com/).</span>
 
