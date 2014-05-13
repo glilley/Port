@@ -11,5 +11,6 @@ Connect on [LinkedIn](https://www.linkedin.com/in/greglilley), hire on [dribbble
 <br>
 <br>
 <br>
-*This site was built with [Jekyll](http://jekyllrb.com/), scaffolded with [Yeoman](http://yeoman.io/), written in [sass](http://sass-lang.com/), and processed with [gulp.js](http://gulpjs.com/).* 
+
+<span class="small">This site was built with a[Jekyll](http://jekyllrb.com/), scaffolded with [Yeoman](http://yeoman.io/), written in [sass](http://sass-lang.com/), and processed with [gulp.js](http://gulpjs.com/).</span>
 
