@@ -216,27 +216,46 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #111;
+  // background-color: #111;
+  background-color: #fff;
+
   opacity: 0;
   margin-bottom: .3em;
   // -webkit-transform: translateY(100%);
   // transition: all .5s;
   transition: opacity .6s;
+  width: 100%;
   &:hover {
     // -webkit-transform: translateY(0);
-    opacity: .9;
+    opacity: .97;
+    width: 100%;
   }
  }
-  p {
+  p, h3 {
+    width: 100%;
     // display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: #e9e9e9;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+    // color: #e9e9e9;
     text-align: center;
-    padding: 2em 2em;
+    padding: 0 2em;
+  }
+  p {
+      color: #666;
+      font-size: 1.1em;
+      font-weight: 400;
+      span {
+        color: $green;
+        font-weight: 300;
+      }
+  }
+  h3 {
+      color: $green;
+      font-size: 1.1em;
+      font-weight: 300;
   }
 }
 
