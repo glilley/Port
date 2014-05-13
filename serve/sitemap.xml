@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.gregllly.com/</loc>
+<<<<<<< HEAD
     <lastmod>2014-05-13T11:39:47-07:00</lastmod>
+=======
+    <lastmod>2014-05-13T16:00:22-07:00</lastmod>
+>>>>>>> process
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -76,7 +80,11 @@
   <url>
     <loc>http://www.gregllly.com/404/</loc>
     
+<<<<<<< HEAD
       <lastmod>2014-05-13T11:39:47-07:00</lastmod>
+=======
+      <lastmod>2014-05-13T16:00:22-07:00</lastmod>
+>>>>>>> process
     
     
       <changefreq>monthly</changefreq>
@@ -89,7 +97,11 @@
   <url>
     <loc>http://www.gregllly.com/about/</loc>
     
+<<<<<<< HEAD
       <lastmod>2014-05-13T11:39:47-07:00</lastmod>
+=======
+      <lastmod>2014-05-13T16:00:22-07:00</lastmod>
+>>>>>>> process
     
     
       <changefreq>monthly</changefreq>
@@ -102,7 +114,11 @@
   <url>
     <loc>http://www.gregllly.com/atom.xml</loc>
     
+<<<<<<< HEAD
       <lastmod>2014-05-13T11:39:47-07:00</lastmod>
+=======
+      <lastmod>2014-05-13T16:00:22-07:00</lastmod>
+>>>>>>> process
     
     
       <changefreq>monthly</changefreq>
@@ -115,7 +131,11 @@
   <url>
     <loc>http://www.gregllly.com/blog/</loc>
     
+<<<<<<< HEAD
       <lastmod>2014-05-13T11:39:47-07:00</lastmod>
+=======
+      <lastmod>2014-05-13T16:00:22-07:00</lastmod>
+>>>>>>> process
     
     
       <changefreq>monthly</changefreq>
@@ -128,7 +148,11 @@
   <url>
     <loc>http://www.gregllly.com/</loc>
     
+<<<<<<< HEAD
       <lastmod>2014-05-13T11:39:47-07:00</lastmod>
+=======
+      <lastmod>2014-05-13T16:00:22-07:00</lastmod>
+>>>>>>> process
     
     
       <changefreq>monthly</changefreq>
@@ -141,7 +165,11 @@
   <url>
     <loc>http://www.gregllly.com/process/</loc>
     
+<<<<<<< HEAD
       <lastmod>2014-05-13T11:39:47-07:00</lastmod>
+=======
+      <lastmod>2014-05-13T16:00:22-07:00</lastmod>
+>>>>>>> process
     
     
       <changefreq>monthly</changefreq>
@@ -154,7 +182,11 @@
   <url>
     <loc>http://www.gregllly.com/sitemap.xml</loc>
     
+<<<<<<< HEAD
       <lastmod>2014-05-13T11:39:47-07:00</lastmod>
+=======
+      <lastmod>2014-05-13T16:00:22-07:00</lastmod>
+>>>>>>> process
     
     
       <changefreq>monthly</changefreq>

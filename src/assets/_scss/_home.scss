@@ -629,6 +629,13 @@ $bgGrey: #f9f9f9;
   h2, h3 {
     color: $green;
   }
+  p {
+    i {
+      // font-style: initial;
+      font-weight: 400;
+      color: #999;
+    }
+  }
   ul {
     margin: 0 auto;
     padding-left: 0;
