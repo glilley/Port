@@ -2062,6 +2062,9 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   margin-top: 0; }
 .process-page h2, .process-page h3 {
   color: #abd69d; }
+.process-page p i {
+  font-weight: 400;
+  color: #999; }
 .process-page ul {
   margin: 0 auto;
   padding-left: 0; }
