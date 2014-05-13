@@ -3,7 +3,7 @@
 title: Greg Lilley
 description: I'm a designer focused on UI and UX. This portfolio contains recent work for Huitly, Native Canadian Ministries, and 3 Dollar Monsters. I'm currently available for hire. 
 tagline: Design Portfolio
-url: http://www.gregllly.com/blog/
+url: http://www.gregllly.com
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src

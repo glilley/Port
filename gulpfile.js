@@ -108,7 +108,7 @@ gulp.task('scripts', function() {
 // LiveReload for images
 gulp.task('images', function() {
   // Only works on PNG, JPEG and GIFs currently
-  return gulp.src(['./src/assets/images/**/*.jpg', './src/assets/images/**/*.png', './src/assets/images/**/*.gif'])
+  return gulp.src(['./src/assets/images/**/*.jpg', './src/assets/images/**/*.png', './src/assets/images/**/*.gif', './src/assets/images/**/*.svg'])
     .pipe($.changed('./serve/assets/images/**/*'))
     .pipe(gulp.dest('./serve/assets/images'))
     .pipe($.size())
@@ -141,7 +141,7 @@ gulp.task('cssoptimize', function() {
 
 // Optimize images using image-min and only update changed files
 gulp.task('imgoptimize', function() {
-  return gulp.src(['./src/assets/images/**/*.jpg', './src/assets/images/**/*.png', './src/assets/images/**/*.gif'])
+  return gulp.src(['./src/assets/images/**/*.jpg', './src/assets/images/**/*.png', './src/assets/images/**/*.gif', './src/assets/images/**/*.svg'])
     .pipe($.changed('./site/assets/images/**/*'))
     .pipe($.imagemin({
       // Runs 16 trials on the PNGs to better the optimization
@@ -164,7 +164,7 @@ gulp.task('jsoptimize', function() {
     // Concats the JS files into one file, see '_layouts_default.html'
     .pipe($.useref())
     // Concats the files into one minimized one
-    .pipe($.concat('all.min.js'))
+    .pipe($.concat('main.js'))
     // Minifies the JS via Uglify
     .pipe($.uglify())
     .pipe(gulp.dest('site/assets/javascript'))
