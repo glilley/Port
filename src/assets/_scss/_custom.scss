@@ -1,66 +1,66 @@
-$green: #abd69d;
+// $green: #abd69d;
 
-header {
-	width: 100%;
-}
-.logo {
-  img{
-    // width: auto;
-    padding-top: 0;
-  	margin: .5em auto 0 auto;
-  	text-align: center;
-  	display: block;
-  	width: 6.5em;
-    @include breakpoint(baby-bear){
-      width: initial;
-    }
-  }
-}
-.nav {
-  display: block;
-  text-align: center;
-	margin: 0 auto;
-  li {
-    display: inline-block;
-  }
-	a { 
-		font-family: "Open Sans";
-		color: $green;
-    display: inline-block;
-    padding: 0;
-		padding-top: 1rem;
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 300;
-		@include breakpoint(sister-bear){
-			padding-top: 1rem;
-		}
-	}
-}
-.green {
-  color: $green;
-	&:hover{
-		color: lighten($green, 10%);
-}
-	&:active{
-		color: lighten($green, 5%);
-	}
-}
-.sidebar-nav-item {
-  display: block;
-  // padding: .5rem 1rem;
-  padding-bottom: .15rem;
-  margin: 0 .5em;
-  // border-top: 1px solid rgba(255, 255, 255, 0.1);
-  &.active {
-    text-decoration: none;
-    border-bottom: 2px solid $green;    
-  }
-}
+// header {
+// 	width: 100%;
+// }
+// .logo {
+//   img{
+//     // width: auto;
+//     padding-top: 0;
+//   	margin: .5em auto 0 auto;
+//   	text-align: center;
+//   	display: block;
+//   	width: 6.5em;
+//     @include breakpoint(baby-bear){
+//       width: initial;
+//     }
+//   }
+// }
+// .nav {
+//   display: block;
+//   text-align: center;
+// 	margin: 0 auto;
+//   li {
+//     display: inline-block;
+//   }
+// 	a { 
+// 		font-family: "Open Sans";
+// 		color: $green;
+//     display: inline-block;
+//     padding: 0;
+// 		padding-top: 1rem;
+// 		text-align: center;
+// 		font-size: 1.5rem;
+// 		font-weight: 300;
+// 		@include breakpoint(sister-bear){
+// 			padding-top: 1rem;
+// 		}
+// 	}
+// }
+// .green {
+//   color: $green;
+// 	&:hover{
+// 		color: lighten($green, 10%);
+// }
+// 	&:active{
+// 		color: lighten($green, 5%);
+// 	}
+// }
+// .sidebar-nav-item {
+//   display: block;
+//   // padding: .5rem 1rem;
+//   padding-bottom: .15rem;
+//   margin: 0 .5em;
+//   // border-top: 1px solid rgba(255, 255, 255, 0.1);
+//   &.active {
+//     text-decoration: none;
+//     border-bottom: 2px solid $green;    
+//   }
+// }
 
-a.sidebar-nav-item {
-  &:hover, &:focus {
-    text-decoration: none;
+// a.sidebar-nav-item {
+//   &:hover, &:focus {
+//     text-decoration: none;
  
-  }
-}
+//   }
+// }
