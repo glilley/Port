@@ -5,11 +5,14 @@
 
 $bodyColor: #777;
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  border: 0;
+html {
+  // height: 100%;
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin: 0 0 5em;
+
 }
 header {
   width: 100%;
@@ -45,6 +48,7 @@ header {
     display: inline-block;
 		padding-top: 1rem;
 		text-align: center;
+    font-family: "Open Sans";
 		font-size: 1.5rem;
 		font-weight: 300;
 		// @include breakpoint(sister-bear){
@@ -225,13 +229,6 @@ header {
  }
   p, h3 {
     width: 100%;
-    // display: none;
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // bottom: 0;
-    // left: 0;
-    // color: #e9e9e9;
     text-align: center;
     padding: 0 2em;
   }
@@ -296,6 +293,12 @@ header {
 }
 
 .home-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5em;
+  width: 100%;
+  // padding-top: 5em;
 	p{
     font-family: "Open Sans";
     color: #999;
@@ -631,9 +634,12 @@ $bgGrey: #f9f9f9;
   }
   p {
     i {
-      // font-style: initial;
-      font-weight: 400;
+      font-style: initial;
+      font-weight: normal;
       color: #999;
+      border-left: 0.1875em solid $green;
+      display: block;
+      padding-left: 1em;
     }
   }
   ul {
@@ -680,7 +686,7 @@ $bgGrey: #f9f9f9;
   }
   figcaption {
     font-family: "Open Sans";
-    font-size: .8rem;
+    font-size: .9rem;
     text-align: center;
     color: #999999;
     font-style: italic;
@@ -707,7 +713,6 @@ $bgGrey: #f9f9f9;
             @include breakpoint(cousin-bear){
         width: 100%;
         max-width: 40em;
-
       }
       h3 {
         font-size: 1rem;
@@ -772,12 +777,12 @@ $bgGrey: #f9f9f9;
       background-position: -10% 100%;
   }
 }
-
 .blog-coming-soon {
   text-align: center;
 }
 // About Page
 .small {
-  font-size: .9em;
-  margin-bottom: 1em;
+  font-size: 1em;
+  margin-bottom: 2em;
+  // color: #999;
 }
