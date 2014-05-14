@@ -735,15 +735,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #abd69d; }
 
-.sidebar-nav-item {
-  display: block;
-  padding: 0.5rem 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1); }
-  .sidebar-nav-item.active {
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: transparent; }
-
 /*
  * Posts and pages
  *
@@ -1444,15 +1435,6 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: #abd69d; }
-
-.sidebar-nav-item {
-  display: block;
-  padding: 0.5rem 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1); }
-  .sidebar-nav-item.active {
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: transparent; }
 
 /*
  * Posts and pages
