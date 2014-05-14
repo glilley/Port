@@ -1995,13 +1995,15 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   margin-top: 0; }
 .process-page h2, .process-page h3 {
   color: #abd69d; }
-.process-page p i {
-  font-style: initial;
-  font-weight: normal;
-  color: #999;
-  border-left: 0.1875em solid #abd69d;
-  display: block;
-  padding-left: 1em; }
+.process-page p {
+  line-height: 1.7; }
+  .process-page p i {
+    font-style: initial;
+    font-weight: normal;
+    color: #999;
+    border-left: 0.1875em solid #abd69d;
+    display: block;
+    padding-left: 1em; }
 .process-page ul {
   margin: 0 auto;
   padding-left: 0; }
@@ -2045,6 +2047,8 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   font-style: italic;
   padding: 0.5rem 0; }
 .process-page section {
+  padding-top: 1em; }
+.process-page section:nth-child(n+2) {
   padding: 2em 0; }
 .process-page .overview {
   display: block;

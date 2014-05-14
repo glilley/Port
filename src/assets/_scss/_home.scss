@@ -633,6 +633,7 @@ $bgGrey: #f9f9f9;
     color: $green;
   }
   p {
+    line-height: 1.7;
     i {
       font-style: initial;
       font-weight: normal;
@@ -660,6 +661,7 @@ $bgGrey: #f9f9f9;
       display: block;
       margin: 0 auto;
       font-size: .8rem;
+      // font-weight: 300;
       @include breakpoint(mama-bear){
         font-size: 1rem;
       }
@@ -693,6 +695,9 @@ $bgGrey: #f9f9f9;
     padding: .5rem 0;
   }
   section {
+    padding-top: 1em;
+  }
+  section:nth-child(n+2) {
     padding: 2em 0;
   }
   .overview {
