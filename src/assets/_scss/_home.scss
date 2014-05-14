@@ -124,7 +124,7 @@ p.toggle {
   color: $green;
   text-align: center;
   padding: 0 0 1em 0;
-  font-weight: normal;
+  font-weight: 400;
   cursor: pointer;
   @include breakpoint(mama-bear){
     display: none;
@@ -133,9 +133,12 @@ p.toggle {
 p.change {
   display: none;
   padding: 0 0 1.5em 0;
-  font-weight: normal;
+  font-weight: 300;
   @include breakpoint (mama-bear){
     display: none;
+  }
+  span {
+    font-weight: 400;
   }
 }
 .info {

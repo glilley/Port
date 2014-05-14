@@ -1623,7 +1623,7 @@ p.toggle {
   color: #abd69d;
   text-align: center;
   padding: 0 0 1em 0;
-  font-weight: normal;
+  font-weight: 400;
   cursor: pointer; }
   @media (min-width: 56.25em) {
     p.toggle {
@@ -1632,10 +1632,12 @@ p.toggle {
 p.change {
   display: none;
   padding: 0 0 1.5em 0;
-  font-weight: normal; }
+  font-weight: 300; }
   @media (min-width: 56.25em) {
     p.change {
       display: none; } }
+  p.change span {
+    font-weight: 400; }
 
 .info h2 {
   color: red;
