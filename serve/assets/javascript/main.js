@@ -30,4 +30,9 @@ $(".hire").hover(
     }
 );
 
+
+$('.toggle').on('click', function(){
+  $(this).next('p').slideToggle();
+})
+
 });

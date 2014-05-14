@@ -11,7 +11,7 @@ html {
   min-height: 100%;
 }
 body {
-  margin: 0 0 5em;
+  margin: 0 0 4em;
 
 }
 header {
@@ -98,7 +98,7 @@ header {
 		position:relative;
 		margin: 0;
 		padding: 0 0 0 0;
-		@include breakpoint(cousin-bear){
+		@include breakpoint(mama-bear){
 			float: left;
 			width: 50%;
 			margin:0;
@@ -109,25 +109,35 @@ header {
   		width: 100%;
 	}
 	p {
-		padding: 1em 0 1em 0;
+		padding: .5em 0;
 		text-align: center;
 		color: $grey;
 		font-size: 1em;
 		font-weight: 300;
+    @include breakpoint (mama-bear) {
+      padding: 1em 0;
+    }
 	}
 }
-// .projects {
-//   li:hover {
-//   		-moz-opacity: .9;
-//   		opacity: .9;
-//   		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"
-//   }
-//   li:active {
-//   		-moz-opacity: .95;
-//   		opacity: .95;
-//   		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=95)"
-//   }
-// }
+p.toggle {
+  display: block;
+  color: $green;
+  text-align: center;
+  padding: 0 0 1em 0;
+  font-weight: normal;
+  cursor: pointer;
+  @include breakpoint(mama-bear){
+    display: none;
+  }
+}
+p.change {
+  display: none;
+  padding: 0 0 1.5em 0;
+  font-weight: normal;
+  @include breakpoint (mama-bear){
+    display: none;
+  }
+}
 .info {
 	h2 {
 		@extend %semi;
@@ -223,14 +233,20 @@ header {
   width: 100%;
   &:hover {
     // -webkit-transform: translateY(0);
-    opacity: .97;
-    width: 100%;
+    @include breakpoint(mama-bear){
+      opacity: .97;
+      width: 100%;
+    }
   }
  }
   p, h3 {
+    display: none;
     width: 100%;
     text-align: center;
     padding: 0 2em;
+    @include breakpoint(mama-bear){
+      display: block;
+    }
   }
   p {
       color: #666;
@@ -242,7 +258,7 @@ header {
       }
       @include breakpoint(cousin-bear) {
         font-size: 1em;
-        padding: 0 1.7em;
+        // padding: 0 1.7em;
         // line-height: 1.5;
       }
       @include breakpoint(papa-bear) {
@@ -253,12 +269,12 @@ header {
       color: $green;
       font-size: 1.1em;
       font-weight: 300;
-      @include breakpoint (cousin-bear) {
-        margin-bottom: .1em;
-      }
-      @include breakpoint (papa-bear){
-        margin-bottom: 1em;
-      }
+      // @include breakpoint (cousin-bear) {
+      //   margin-bottom: .1em;
+      // }
+      // @include breakpoint (papa-bear){
+      //   margin-bottom: 1em;
+      // }
   }
 }
 
@@ -590,6 +606,31 @@ tbody tr:nth-child(odd) {
   background: url(../images/icons_1.svg) no-repeat;
   background-position: 100% 100%;
 }
+
+// input[type=checkbox]{
+//   opacity: 0;
+//   position: absolute;
+// }
+// label {
+//   display: block;
+//   padding: 1em 0;
+//   font-family: "Open Sans";
+//   color: $green;
+//   font-weight: 300;
+//   text-align: center;
+// }
+// .change {
+//   padding-top: 0;
+//   display: none;
+//   -webkit-transform: translateY(20px);
+//   transition: all 1s;
+
+// }
+// input[type=checkbox]:checked ~ .change {
+//   padding-top: 0;
+//   display: block;
+//   -webkit-transform: translateY(0px);
+// }
 
 $bgGrey: #f9f9f9;
 .process-page {
