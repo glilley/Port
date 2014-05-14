@@ -28,10 +28,13 @@
     @media (min-width: 64em) { @content; } // = 1100px
   }
   @else if $point == papa-bear {
-    @media (min-width: 60em) { @content; } // = 900px
+    @media (min-width: 60em) { @content; } // = 960px
   }
   @else if $point == mama-bear{
-    @media (min-width: 56.25em)  { @content; } //= 750px
+    @media (min-width: 56.25em)  { @content; } //= 900px
+  }
+  @else if $point == tab-bear{
+    @media (min-width: 50em)  { @content; } //= 900px
   }
    @else if $point == cousin-bear{
     @media (min-width: 43.75em)  { @content; } //= 700px
