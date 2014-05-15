@@ -137,9 +137,9 @@ p.change {
   @include breakpoint (mama-bear){
     display: none;
   }
-  span {
-    font-weight: 400;
-  }
+  // span {
+  //   font-weight: 400;
+  // }
 }
 .info {
 	h2 {
@@ -824,6 +824,9 @@ $bgGrey: #f9f9f9;
   }
     .pdf {
       background-position: -10% 100%;
+      &:target {
+        border: 1px solid red;
+      }
   }
 }
 .blog-coming-soon {

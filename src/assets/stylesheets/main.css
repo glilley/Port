@@ -1636,8 +1636,6 @@ p.change {
   @media (min-width: 56.25em) {
     p.change {
       display: none; } }
-  p.change span {
-    font-weight: 400; }
 
 .info h2 {
   color: red;
@@ -2139,6 +2137,8 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   display: inline-block; }
 .process-page .pdf {
   background-position: -10% 100%; }
+  .process-page .pdf:target {
+    border: 1px solid red; }
 
 .blog-coming-soon {
   text-align: center; }
