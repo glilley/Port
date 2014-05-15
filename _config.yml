@@ -1,7 +1,7 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
 title: Greg Lilley
-description: I'm a designer focused on UI and UX. This portfolio contains recent work for Huitly, Native Canadian Ministries, and 3 Dollar Monsters. I'm currently available for hire. 
+description: Greg Lilley is a UX/UI designer living in California and available for hire. Recent projects include Huitly and 3 Dollar Monsters. 
 tagline: Design Portfolio
 url: http://www.gregllly.com
 
@@ -18,7 +18,7 @@ owner:
   twitter: http://www.twitter.com/gregllly
 
 # general setting for Jekyll
-googleAnalytics: UA-XXXXX-X
+googleAnalytics: UA-47795709-1
 
 # _config.build.yml overwrites these options when you run `gulp build`
 # Enables future posts (posts with dates in the future) and drafts
