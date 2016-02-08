@@ -17,10 +17,9 @@
 
 
 $grey: #999;
-$green: #abd69d;
+$green: #00bf4d;
 
 .custom-wrap {
-	p {color: $grey;}
 	h1 {@extend %bold; font-size: 3em; $grey: #999;}
 	h2 {@extend %medium; $grey: #999;}
 	h3 {@extend %semi; $grey: #999;}

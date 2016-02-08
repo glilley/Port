@@ -3,6 +3,7 @@
 @import "typography";
 @import "style";
 
+$green: #00bf4d;
 $bodyColor: #777;
 
 html {
@@ -46,14 +47,14 @@ header {
   }
 	a { 
     display: inline-block;
-		padding-top: 1rem;
+		padding-top: .5rem;
 		text-align: center;
     font-family: "Open Sans";
-		font-size: 1.5rem;
+		font-size: 1.45rem;
 		font-weight: 300;
-		// @include breakpoint(sister-bear){
-		// 	padding-top: 1rem;
-		// }
+		@include breakpoint(sister-bear){
+			padding-top: 1rem;
+		}
 	}
 }
 .green {
@@ -68,27 +69,45 @@ header {
 
 .work {
 	background-color: #f9f9f9;
-	@include breakpoint(cousin-bear){
-		padding-bottom: 2em;
-	}
+	padding-bottom: 2.5em;
+  padding-top: 4em
+	
 }
-.work p {
-	margin: 0;
-	padding: 1em 0 1em 0;
-	text-align: center;
-	font-size: 1.5em;
-	font-weight: 300;
-}
+// .work p {
+// 	margin: 0;
+// 	padding: 1em 0 1em 0;
+// 	text-align: center;
+// 	font-size: 1.5em;
+// 	font-weight: 300;
+// }
 
 .intro {
-	line-height: 1.35;
-	font-size: 1.5em;
+	line-height: 1.6;
+	font-size: 1.4em;
 	text-align: center;
-	margin: .4em 0 1.5em 0;
 	font-weight: 300;
+  padding: 2em 0;
+  margin: aut 0 auto 0;
+  a {
+    color: #00bf4d;
+  }
+  @include breakpoint(little-bear){
+    font-size: 3em;
+    text-align: left;
+    line-height: 1.4;
+    padding: 1em 0;
+    color: #555;
+
+  }
+
 	@include breakpoint(sister-bear){
-		margin: 1em 0 2.5em 0;
+    text-align: center;
+    line-height: 1.6;
+    padding: 2em 0;
 	}
+}
+.divider {
+  color: red;
 }
 .projects {
 	display: block;
@@ -97,12 +116,12 @@ header {
 	li { 
 		position:relative;
 		margin: 0;
-		padding: 0 0 0 0;
+		padding: 1em 0;
 		@include breakpoint(mama-bear){
 			float: left;
 			width: 50%;
 			margin:0;
-			padding: 0 .5% 0 .5%;
+			padding: .3% .5%;
 		}
 	}
 	img{
@@ -123,23 +142,24 @@ p.toggle {
   display: block;
   color: $green;
   text-align: center;
-  padding: 0 0 1em 0;
-  font-weight: 400;
+  padding: .5em 0 0 0;
+  font-weight: 300;
   cursor: pointer;
+  margin-bottom: .2em;
   @include breakpoint(mama-bear){
     display: none;
   }
 }
 p.change {
   display: none;
-  padding: 0 0 1.5em 0;
   font-weight: 300;
+  margin-bottom: 0;
   @include breakpoint (mama-bear){
     display: none;
   }
-  // span {
-  //   font-weight: 400;
-  // }
+}
+p.change a span {
+  line-height: 3;
 }
 .info {
 	h2 {
@@ -254,7 +274,7 @@ p.change {
   p {
       color: #666;
       font-size: 1.1em;
-      font-weight: 400;
+      font-weight: 300;
       span {
         color: $green;
         font-weight: 300;
@@ -269,7 +289,7 @@ p.change {
       }
   }
   h3 {
-      color: $green;
+      color: $grey;
       font-size: 1.1em;
       font-weight: 300;
       // @include breakpoint (cousin-bear) {
@@ -471,7 +491,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.6;
     @include breakpoint (baby-bear){
       font-size: 1.1rem;
-      line-height: 1.6;
+      line-height: 1.7;
     }
   }
   em {
@@ -682,7 +702,7 @@ $bgGrey: #f9f9f9;
       font-style: initial;
       font-weight: normal;
       color: #999;
-      border-left: 0.1875em solid $green;
+      border-left: 0.18em solid $green;
       display: block;
       padding-left: 1em;
     }
