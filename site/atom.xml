@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Greg Lilley</title>
- <link href="http://www.gregllly.com/atom.xml" rel="self"/>
- <link href="http://www.gregllly.com/"/>
- <updated>2016-02-07T23:15:10-08:00</updated>
- <id>http://www.gregllly.com</id>
+ <link href="http://www.greg-lilley.com/atom.xml" rel="self"/>
+ <link href="http://www.greg-lilley.com/"/>
+ <updated>2016-03-20T14:12:07-07:00</updated>
+ <id>http://www.greg-lilley.com</id>
  <author>
    <name></name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Per-App iPhone Passcode</title>
-   <link href="http://www.gregllly.com/jekyll/2014/04/23/per-app-iphone-passcode/"/>
+   <link href="http://www.greg-lilley.com/jekyll/2014/04/23/per-app-iphone-passcode/"/>
    <updated>2014-04-23T00:00:00-07:00</updated>
-   <id>http://www.gregllly.com/jekyll/2014/04/23/per-app-iphone-passcode</id>
+   <id>http://www.greg-lilley.com/jekyll/2014/04/23/per-app-iphone-passcode</id>
    <content type="html">&lt;p&gt;It takes me roughly 1 second to unlock my iPhone, including animation (no, I don’t get nauseous). If you&amp;rsquo;re like most smartphone users, you check your phone about &lt;a href=&quot;http://www.slideshare.net/kleinerperkins/kpcb-internet-trends-2013&quot;&gt;150 times per day&lt;/a&gt;. That&amp;rsquo;s over &lt;strong&gt;15 hours&lt;/strong&gt; a year &amp;ndash; assuming you never have to try more than once. That&amp;rsquo;s a small price to pay for a little privacy these days, right?&lt;/p&gt;
 
 &lt;p&gt;Assigning passcodes on a per-app basis allocates this frustration to where its needed: banking, general settings, photos, whatever makes you uncomfortable. Maybe that&amp;rsquo;s every app for some people, but for me, I couldn&amp;rsquo;t care less if you picked up my phone and started playing Threes or reading Zite (I&amp;rsquo;m boycotting the Flipboard acquisition). In fact, I&amp;rsquo;d rather avoid the &amp;ldquo;Hey, what&amp;rsquo;s your password?&amp;rdquo; when a friend wants to borrow my phone for a minute. Time savings on such a minute scale doesn&amp;rsquo;t seem like a big deal, but it adds up and like with any type of tracking &amp;ndash; think Fitbit or Nike FuelBand (&lt;a href=&quot;http://mashable.com/2014/04/22/nike-fuelband-exit-apple/&quot;&gt;RIP&lt;/a&gt;) &amp;ndash; once you see those numbers accumulating &amp;ndash; 15 hours is insane &amp;ndash; you&amp;rsquo;ll start to feel the burn.&lt;/p&gt;
@@ -49,9 +49,9 @@
  
  <entry>
    <title>Welcome to Jekyll!</title>
-   <link href="http://www.gregllly.com/jekyll/2014/03/03/welcome-to-jekyll/"/>
+   <link href="http://www.greg-lilley.com/jekyll/2014/03/03/welcome-to-jekyll/"/>
    <updated>2014-03-03T00:00:00-08:00</updated>
-   <id>http://www.gregllly.com/jekyll/2014/03/03/welcome-to-jekyll</id>
+   <id>http://www.greg-lilley.com/jekyll/2014/03/03/welcome-to-jekyll</id>
    <content type="html">&lt;p&gt;You&amp;rsquo;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
 To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
 
@@ -70,9 +70,9 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
  
  <entry>
    <title>Welcome Test</title>
-   <link href="http://www.gregllly.com/jekyll/2014/03/03/welcome-test/"/>
+   <link href="http://www.greg-lilley.com/jekyll/2014/03/03/welcome-test/"/>
    <updated>2014-03-03T00:00:00-08:00</updated>
-   <id>http://www.gregllly.com/jekyll/2014/03/03/welcome-test</id>
+   <id>http://www.greg-lilley.com/jekyll/2014/03/03/welcome-test</id>
    <content type="html">&lt;p&gt;You&amp;rsquo;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
 To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
 
@@ -91,9 +91,9 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
  
  <entry>
    <title>Introducing Poole</title>
-   <link href="http://www.gregllly.com/jekyll/poole/2014/03/02/introducing-poole/"/>
+   <link href="http://www.greg-lilley.com/jekyll/poole/2014/03/02/introducing-poole/"/>
    <updated>2014-03-02T00:00:00-08:00</updated>
-   <id>http://www.gregllly.com/jekyll/poole/2014/03/02/introducing-poole</id>
+   <id>http://www.greg-lilley.com/jekyll/poole/2014/03/02/introducing-poole</id>
    <content type="html">&lt;p&gt;&lt;em&gt;The Strange Case of Dr. Jeykll and Mr. Hyde&lt;/em&gt; tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel&amp;rsquo;s supporting cast is a man by the name of Mr. Poole, Dr. Jekyll&amp;rsquo;s loyal butler.&lt;/p&gt;
 
 &lt;hr&gt;
@@ -138,9 +138,9 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
  
  <entry>
    <title>Example content</title>
-   <link href="http://www.gregllly.com/jekyll/example/2014/03/01/2014-03-01-example-content/"/>
+   <link href="http://www.greg-lilley.com/jekyll/example/2014/03/01/2014-03-01-example-content/"/>
    <updated>2014-03-01T00:00:00-08:00</updated>
-   <id>http://www.gregllly.com/jekyll/example/2014/03/01/2014-03-01-example-content</id>
+   <id>http://www.greg-lilley.com/jekyll/example/2014/03/01/2014-03-01-example-content</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 &lt;/div&gt;

@@ -277,15 +277,15 @@ a:target {
 
 
 .custom-wrap h2, .custom-wrap p, .custom-wrap a, .custom-wrap h2, .custom-wrap p, .custom-wrap a {
-  font-family: "Open sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300; }
 
 .custom-wrap h3, .custom-wrap h3, .info h2 {
-  font-family: "Open sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600; }
 
 .custom-wrap h1, .custom-wrap h1 {
-  font-family: "Open sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700; }
 
 .custom-wrap h1 {
@@ -653,7 +653,7 @@ footer p {
   font-size: 0.75em;
   font-weight: 300;
   font-family: "Open Sans";
-  color: #999999; }
+  color: #777; }
 
 .social-icon {
   float: left;
@@ -665,10 +665,6 @@ footer p {
   @media (min-width: 30em) {
     .social-icon {
       margin: 1em; } }
-  .social-icon:hover {
-    -moz-opacity: 0.6;
-    opacity: 0.6;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; }
   .social-icon:active {
     -moz-opacity: 0.9;
     opacity: 0.9;
@@ -976,15 +972,15 @@ a:target {
 
 
 .custom-wrap h2, .custom-wrap p, .custom-wrap a, .custom-wrap h2, .custom-wrap p, .custom-wrap a {
-  font-family: "Open sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300; }
 
 .custom-wrap h3, .custom-wrap h3, .info h2 {
-  font-family: "Open sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600; }
 
 .custom-wrap h1, .custom-wrap h1 {
-  font-family: "Open sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700; }
 
 .custom-wrap h1 {
@@ -1382,7 +1378,7 @@ header {
     display: inline-block;
     padding-top: 0.5rem;
     text-align: center;
-    font-family: "Open Sans";
+    font-family: "Montserrat";
     font-size: 1.45rem;
     font-weight: 300; }
     @media (min-width: 38em) {
@@ -1401,27 +1397,56 @@ header {
   padding-bottom: 2.5em;
   padding-top: 4em; }
 
-.intro {
+.bold {
+  font-weight: 700; }
+
+.intro-name {
   line-height: 1.6;
   font-size: 1.4em;
-  text-align: center;
-  font-weight: 300;
-  padding: 2em 0;
-  margin: aut 0 auto 0; }
-  .intro a {
-    color: #00bf4d; }
+  text-align: left;
+  font-weight: 400;
+  padding-top: 1.5em;
+  margin: aut 0 auto 0;
+  color: #444;
+  font-size: 2.2em; }
   @media (min-width: 25em) {
-    .intro {
-      font-size: 3em;
-      text-align: left;
+    .intro-name {
       line-height: 1.4;
-      padding: 1em 0;
-      color: #555; } }
+      padding: 1em 0 0.5em 0; } }
   @media (min-width: 38em) {
-    .intro {
-      text-align: center;
+    .intro-name {
       line-height: 1.6;
-      padding: 2em 0; } }
+      font-size: 3em; } }
+
+.intro-content {
+  line-height: 1.4;
+  text-align: left;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 16px 0;
+  color: #444; }
+  .intro-content a {
+    color: #444; }
+  .intro-content a.color-change:hover, .intro-content a.color-change:active {
+    padding-bottom: 4px;
+    border-bottom: 4px solid #ec2c22; }
+  .intro-content a.color-huitly:hover, .intro-content a.color-huitly:active {
+    padding-bottom: 4px;
+    border-bottom: 4px solid #3BC4BD; }
+  .intro-content a.color-monster:hover, .intro-content a.color-monster:active {
+    padding-bottom: 4px;
+    border-bottom: 4px solid #71BF9C; }
+  @media (min-width: 25em) {
+    .intro-content {
+      font-size: 2em;
+      line-height: 1.4;
+      padding: 16px 0; } }
+  @media (min-width: 38em) {
+    .intro-content {
+      line-height: 1.6;
+      padding: 2px 0;
+      font-size: 3em; } }
 
 .divider {
   color: red; }
@@ -1582,10 +1607,6 @@ p.change a span {
 
 .portfolio, .resume, .threedollar img {
   transition: opacity 0.5s; }
-  .portfolio:hover, .resume:hover, .threedollar img:hover {
-    -moz-opacity: 0.7;
-    opacity: 0.7;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; }
   .portfolio:active, .resume:active, .threedollar img:active {
     -moz-opacity: 0.9;
     opacity: 0.9;
@@ -1599,7 +1620,7 @@ p.change a span {
   width: 100%;
   height: 4em; }
   .home-footer p {
-    font-family: "Open Sans";
+    font-family: "Montserrat";
     color: #999;
     float: right;
     padding: 1.5em 0 0 1em;
@@ -1622,10 +1643,6 @@ p.change a span {
   @media (min-width: 30em) {
     .social-icon {
       margin: 1em; } }
-  .social-icon:hover {
-    -moz-opacity: 0.6;
-    opacity: 0.6;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; }
   .social-icon:active {
     -moz-opacity: 0.9;
     opacity: 0.9;
@@ -1658,7 +1675,7 @@ p.change a span {
   .sidebar a {
     font-weight: 300;
     color: #fff;
-    font-family: "Open Sans"; }
+    font-family: "Montserrat"; }
 
 @media (min-width: 30rem) {
   .sidebar {
@@ -1711,7 +1728,7 @@ p {
   margin-bottom: 1rem;
   font-size: 1rem;
   color: #777;
-  font-family: "Open Sans";
+  font-family: "Montserrat";
   font-weight: 400;
   line-height: 1.6; }
   @media (min-width: 30em) {
@@ -1827,7 +1844,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   background-position: 100% 100%; }
 
 .process-page h1, .process-page h2, .process-page h3, .process-page h4, .process-page h5, .process-page h6 {
-  font-family: "Open Sans";
+  font-family: "Montserrat";
   margin-bottom: 0.5rem;
   font-weight: 300;
   line-height: 1.25;
@@ -1898,7 +1915,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   display: block;
   margin: 0 auto; }
 .process-page figcaption {
-  font-family: "Open Sans";
+  font-family: "Montserrat";
   font-size: 0.9rem;
   text-align: center;
   color: #999999;

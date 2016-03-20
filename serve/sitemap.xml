@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.gregllly.com/</loc>
-    <lastmod>2016-02-08T08:26:30-08:00</lastmod>
+    <loc>http://www.greg-lilley.com/</loc>
+    <lastmod>2016-03-20T14:12:07-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
     <url>
-      <loc>http://www.gregllly.com/jekyll/2014/04/23/per-app-iphone-passcode/</loc>
+      <loc>http://www.greg-lilley.com/jekyll/2014/04/23/per-app-iphone-passcode/</loc>
       
         <lastmod>2014-04-23T00:00:00-07:00</lastmod>
       
@@ -21,7 +21,7 @@
     </url>
   
     <url>
-      <loc>http://www.gregllly.com/jekyll/2014/03/03/welcome-to-jekyll/</loc>
+      <loc>http://www.greg-lilley.com/jekyll/2014/03/03/welcome-to-jekyll/</loc>
       
         <lastmod>2014-03-03T00:00:00-08:00</lastmod>
       
@@ -34,7 +34,7 @@
     </url>
   
     <url>
-      <loc>http://www.gregllly.com/jekyll/2014/03/03/welcome-test/</loc>
+      <loc>http://www.greg-lilley.com/jekyll/2014/03/03/welcome-test/</loc>
       
         <lastmod>2014-03-03T00:00:00-08:00</lastmod>
       
@@ -47,7 +47,7 @@
     </url>
   
     <url>
-      <loc>http://www.gregllly.com/jekyll/poole/2014/03/02/introducing-poole/</loc>
+      <loc>http://www.greg-lilley.com/jekyll/poole/2014/03/02/introducing-poole/</loc>
       
         <lastmod>2014-03-02T00:00:00-08:00</lastmod>
       
@@ -60,7 +60,7 @@
     </url>
   
     <url>
-      <loc>http://www.gregllly.com/jekyll/example/2014/03/01/2014-03-01-example-content/</loc>
+      <loc>http://www.greg-lilley.com/jekyll/example/2014/03/01/2014-03-01-example-content/</loc>
       
         <lastmod>2014-03-01T00:00:00-08:00</lastmod>
       
@@ -74,22 +74,9 @@
   
   
   <url>
-    <loc>http://www.gregllly.com/404/</loc>
+    <loc>http://www.greg-lilley.com/404/</loc>
     
-      <lastmod>2016-02-08T08:26:30-08:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.gregllly.com/about/</loc>
-    
-      <lastmod>2016-02-08T08:26:30-08:00</lastmod>
+      <lastmod>2016-03-20T14:12:07-07:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -100,22 +87,9 @@
   </url>
   
   <url>
-    <loc>http://www.gregllly.com/atom.xml</loc>
+    <loc>http://www.greg-lilley.com/about/</loc>
     
-      <lastmod>2016-02-08T08:26:30-08:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.gregllly.com/blog/</loc>
-    
-      <lastmod>2016-02-08T08:26:30-08:00</lastmod>
+      <lastmod>2016-03-20T14:12:07-07:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -126,22 +100,9 @@
   </url>
   
   <url>
-    <loc>http://www.gregllly.com/</loc>
+    <loc>http://www.greg-lilley.com/atom.xml</loc>
     
-      <lastmod>2016-02-08T08:26:30-08:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.gregllly.com/process/</loc>
-    
-      <lastmod>2016-02-08T08:26:30-08:00</lastmod>
+      <lastmod>2016-03-20T14:12:07-07:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -152,9 +113,48 @@
   </url>
   
   <url>
-    <loc>http://www.gregllly.com/sitemap.xml</loc>
+    <loc>http://www.greg-lilley.com/blog/</loc>
     
-      <lastmod>2016-02-08T08:26:30-08:00</lastmod>
+      <lastmod>2016-03-20T14:12:07-07:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.greg-lilley.com/</loc>
+    
+      <lastmod>2016-03-20T14:12:07-07:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.greg-lilley.com/process/</loc>
+    
+      <lastmod>2016-03-20T14:12:07-07:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.greg-lilley.com/sitemap.xml</loc>
+    
+      <lastmod>2016-03-20T14:12:07-07:00</lastmod>
     
     
       <changefreq>monthly</changefreq>

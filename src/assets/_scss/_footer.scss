@@ -5,7 +5,7 @@ footer {
 		font-size: .75em;
 		font-weight: 300;
 		font-family: "Open Sans";
-		color: #999999;
+		color: #777;
 	}
 }
 .social-icon {
@@ -17,11 +17,11 @@ footer {
 	height: 1.75em;
 	margin: 1em .4em;
 	background: url(/assets/images/icons.svg) no-repeat;
-	&:hover{
-		-moz-opacity: .6;
-		opacity: .6;
-		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"
-	}
+	// &:hover{
+	// 	-moz-opacity: .6;
+	// 	opacity: .6;
+	// 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"
+	// }
 	&:active{
 		-moz-opacity: .9;
 		opacity: .9;
