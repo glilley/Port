@@ -78,7 +78,7 @@ abbr[title] {
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
 b, strong {
-  font-weight: bold; }
+  font-weight: 600; }
 
 /**
  * Address styling not present in Safari 5 and Chrome.
@@ -277,21 +277,21 @@ a:target {
 
 
 .custom-wrap h2, .custom-wrap p, .custom-wrap a, .custom-wrap h2, .custom-wrap p, .custom-wrap a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300; }
+  font-family: "Open sans", sans-serif;
+  font-weight: 600; }
 
 .custom-wrap h3, .custom-wrap h3, .info h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open sans", sans-serif;
   font-weight: 600; }
 
 .custom-wrap h1, .custom-wrap h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700; }
+  font-family: "Open sans", sans-serif;
+  font-weight: 600; }
 
 .custom-wrap h1 {
   font-size: 3em; }
 .custom-wrap a {
-  color: #00bf4d; }
+  color: #444; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -311,7 +311,7 @@ body {
   /* Lists */ }
   .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
     margin-bottom: 0.5rem;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 1.25;
     color: #999;
     text-rendering: optimizeLegibility; }
@@ -439,7 +439,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
  */
 .lead {
   font-size: 1.25rem;
-  font-weight: 300; }
+  font-weight: 600; }
 
 /*
  * Messages
@@ -489,7 +489,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   margin-bottom: 1rem;
   color: #9a9a9a;
   font-family: "Open Sans";
-  font-weight: 300; }
+  font-weight: 600; }
 
 /* Related posts */
 .related {
@@ -554,7 +554,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   color: #888888;
   letter-spacing: -0.025rem; }
 
@@ -651,7 +651,7 @@ footer p {
   float: right;
   padding: 1.7em 0 0 1em;
   font-size: 0.75em;
-  font-weight: 300;
+  font-weight: 600;
   font-family: "Open Sans";
   color: #777; }
 
@@ -756,7 +756,7 @@ abbr[title] {
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
 b, strong {
-  font-weight: bold; }
+  font-weight: 600; }
 
 /**
  * Address styling not present in Safari 5 and Chrome.
@@ -972,21 +972,21 @@ a:target {
 
 
 .custom-wrap h2, .custom-wrap p, .custom-wrap a, .custom-wrap h2, .custom-wrap p, .custom-wrap a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300; }
+  font-family: "Open sans", sans-serif;
+  font-weight: 600; }
 
 .custom-wrap h3, .custom-wrap h3, .info h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open sans", sans-serif;
   font-weight: 600; }
 
 .custom-wrap h1, .custom-wrap h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700; }
+  font-family: "Open sans", sans-serif;
+  font-weight: 600; }
 
 .custom-wrap h1 {
   font-size: 3em; }
 .custom-wrap a {
-  color: #00bf4d; }
+  color: #444; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -1006,7 +1006,7 @@ body {
   /* Lists */ }
   .post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
     margin-bottom: 0.5rem;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 1.25;
     color: #999;
     text-rendering: optimizeLegibility; }
@@ -1134,7 +1134,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
  */
 .lead {
   font-size: 1.25rem;
-  font-weight: 300; }
+  font-weight: 600; }
 
 /*
  * Messages
@@ -1184,7 +1184,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   margin-bottom: 1rem;
   color: #9a9a9a;
   font-family: "Open Sans";
-  font-weight: 300; }
+  font-weight: 600; }
 
 /* Related posts */
 .related {
@@ -1249,7 +1249,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   color: #888888;
   letter-spacing: -0.025rem; }
 
@@ -1378,33 +1378,33 @@ header {
     display: inline-block;
     padding-top: 0.5rem;
     text-align: center;
-    font-family: "Montserrat";
+    font-family: "Open sans";
     font-size: 1.45rem;
-    font-weight: 300; }
+    font-weight: 600; }
     @media (min-width: 38em) {
       .nav a {
         padding-top: 1rem; } }
 
 .green {
-  color: #00bf4d; }
+  color: #444444; }
   .green:hover {
-    color: #00f261; }
+    color: #5e5e5e; }
   .green:active {
-    color: #00d957; }
+    color: #515151; }
 
 .work {
   background-color: #f9f9f9;
-  padding-bottom: 2.5em;
+  padding-bottom: 4em;
   padding-top: 4em; }
 
 .bold {
-  font-weight: 700; }
+  font-weight: 600; }
 
 .intro-name {
   line-height: 1.6;
   font-size: 1.4em;
   text-align: left;
-  font-weight: 400;
+  font-weight: 600;
   padding-top: 1.5em;
   margin: aut 0 auto 0;
   color: #444;
@@ -1422,26 +1422,27 @@ header {
   line-height: 1.4;
   text-align: left;
   font-size: 2em;
-  font-weight: 400;
-  margin: 0 auto;
+  font-weight: 600;
+  margin: 2em auto;
   padding: 16px 0;
   color: #444; }
   .intro-content a {
     color: #444; }
-  .intro-content a.color-change:hover, .intro-content a.color-change:active {
+  .intro-content a.color-change, .intro-content a.color-change:active {
     padding-bottom: 4px;
     border-bottom: 4px solid #ec2c22; }
-  .intro-content a.color-huitly:hover, .intro-content a.color-huitly:active {
+  .intro-content a.color-huitly, .intro-content a.color-huitly:active {
     padding-bottom: 4px;
     border-bottom: 4px solid #3BC4BD; }
-  .intro-content a.color-monster:hover, .intro-content a.color-monster:active {
+  .intro-content a.color-monster, .intro-content a.color-monster:active {
     padding-bottom: 4px;
     border-bottom: 4px solid #71BF9C; }
   @media (min-width: 25em) {
     .intro-content {
       font-size: 2em;
-      line-height: 1.4;
-      padding: 16px 0; } }
+      line-height: 1.5;
+      padding: 16px 0;
+      margin-top: 1em; } }
   @media (min-width: 38em) {
     .intro-content {
       line-height: 1.6;
@@ -1469,20 +1470,24 @@ header {
     width: 100%; }
   .projects p {
     padding: 0.5em 0;
-    text-align: center;
-    color: #999;
-    font-size: 1em;
-    font-weight: 300; }
+    text-align: left;
+    color: #444444;
+    font-size: 1.2em;
+    font-weight: 600; }
+    .projects p a {
+      color: #444444;
+      border-bottom: 2px solid #444444;
+      padding-bottom: 2px; }
     @media (min-width: 56.25em) {
       .projects p {
         padding: 1em 0; } }
 
 p.toggle {
   display: block;
-  color: #00bf4d;
+  color: #444444;
   text-align: center;
   padding: 0.5em 0 0 0;
-  font-weight: 300;
+  font-weight: 600;
   cursor: pointer;
   margin-bottom: 0.2em; }
   @media (min-width: 56.25em) {
@@ -1491,7 +1496,7 @@ p.toggle {
 
 p.change {
   display: none;
-  font-weight: 300;
+  font-weight: 600;
   margin-bottom: 0; }
   @media (min-width: 56.25em) {
     p.change {
@@ -1504,7 +1509,7 @@ p.change a span {
   color: red;
   text-align: center;
   font-size: 1.5em;
-  font-weight: 300;
+  font-weight: 600;
   padding: 0.2em 0 0 0; }
 .info a {
   text-align: center;
@@ -1514,7 +1519,7 @@ p.change a span {
   float: left;
   font-size: 1.5em;
   padding: 0 0 0 0.5em;
-  font-weight: 300; }
+  font-weight: 600; }
 .info span {
   float: left; }
 
@@ -1532,12 +1537,12 @@ p.change a span {
   .coming-soon h2 {
     text-align: center;
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: 600;
     padding: 1em 0 0 0; }
   .coming-soon p {
     text-align: center;
     margin-bottom: 0;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 1.1em; }
   .coming-soon .side-project {
     display: block; }
@@ -1559,7 +1564,7 @@ p.change a span {
 .threedollar {
   transition: opacity 0.5s; }
   .threedollar p {
-    color: #00bf4d; }
+    color: #444444; }
 
 .work-summary-container {
   position: relative;
@@ -1573,37 +1578,42 @@ p.change a span {
     background-color: #fff;
     opacity: 0;
     margin-bottom: 0.3em;
-    transition: opacity 0.6s;
+    transition: opacity 0.4s;
     width: 100%; }
     @media (min-width: 56.25em) {
       .work-summary-container .work-summary:hover {
-        opacity: 0.97;
+        opacity: 1;
         width: 100%; } }
   .work-summary-container p, .work-summary-container h3 {
     display: none;
     width: 100%;
-    text-align: center;
-    padding: 0 2em; }
+    text-align: left;
+    padding: 2em; }
     @media (min-width: 56.25em) {
       .work-summary-container p, .work-summary-container h3 {
         display: block; } }
   .work-summary-container p {
-    color: #666;
+    color: #444444;
     font-size: 1.1em;
-    font-weight: 300; }
-    .work-summary-container p span {
-      color: #00bf4d;
-      font-weight: 300; }
+    font-weight: 600; }
+    .work-summary-container p a {
+      color: inherit;
+      border-bottom: 2px solid #444444;
+      padding-botom: 2px; }
     @media (min-width: 43.75em) {
       .work-summary-container p {
-        font-size: 1em; } }
+        font-size: 1.1em; } }
     @media (min-width: 60em) {
       .work-summary-container p {
-        font-size: 1.1em; } }
+        font-size: 1.28em; } }
   .work-summary-container h3 {
-    color: #999;
+    color: #444444;
     font-size: 1.1em;
-    font-weight: 300; }
+    font-weight: 600; }
+
+@media (min-width: 43.75em) {
+  .visible-s {
+    display: none !important; } }
 
 .portfolio, .resume, .threedollar img {
   transition: opacity 0.5s; }
@@ -1620,12 +1630,12 @@ p.change a span {
   width: 100%;
   height: 4em; }
   .home-footer p {
-    font-family: "Montserrat";
+    font-family: "Open sans";
     color: #999;
     float: right;
     padding: 1.5em 0 0 1em;
     font-size: 0.9em;
-    font-weight: 300; }
+    font-weight: 600; }
 
 .wrapper {
   max-width: 43.75rem;
@@ -1639,7 +1649,7 @@ p.change a span {
   width: 2em;
   height: 1.75em;
   margin: 1em 0.4em;
-  background: url(../images/icons_1.svg) no-repeat; }
+  background: url(../images/icons_2.svg) no-repeat; }
   @media (min-width: 30em) {
     .social-icon {
       margin: 1em; } }
@@ -1648,7 +1658,7 @@ p.change a span {
     opacity: 0.9;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; }
 
-.twitter {
+.alist {
   background-position: 0% 0.448%; }
 
 .linkedin {
@@ -1673,9 +1683,9 @@ p.change a span {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
   .sidebar a {
-    font-weight: 300;
+    font-weight: 600;
     color: #fff;
-    font-family: "Montserrat"; }
+    font-family: "Open sans"; }
 
 @media (min-width: 30rem) {
   .sidebar {
@@ -1695,14 +1705,14 @@ p.change a span {
   margin: 0 0.5em; }
   .sidebar-nav-item.active {
     text-decoration: none;
-    border-bottom: 2px solid #00bf4d; }
+    border-bottom: 2px solid #444444; }
 
 a.sidebar-nav-item:hover, a.sidebar-nav-item:focus {
   text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 1.25;
   color: #999;
   text-rendering: optimizeLegibility; }
@@ -1728,7 +1738,7 @@ p {
   margin-bottom: 1rem;
   font-size: 1rem;
   color: #777;
-  font-family: "Montserrat";
+  font-family: "Open sans";
   font-weight: 400;
   line-height: 1.6; }
   @media (min-width: 30em) {
@@ -1844,9 +1854,9 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   background-position: 100% 100%; }
 
 .process-page h1, .process-page h2, .process-page h3, .process-page h4, .process-page h5, .process-page h6 {
-  font-family: "Montserrat";
+  font-family: "Open sans";
   margin-bottom: 0.5rem;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 1.25;
   text-rendering: optimizeLegibility; }
 .process-page .container {
@@ -1869,14 +1879,14 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   color: #999;
   margin-top: 0; }
 .process-page h2, .process-page h3 {
-  color: #00bf4d; }
+  color: #444444; }
 .process-page p {
   line-height: 1.7; }
   .process-page p i {
     font-style: initial;
     font-weight: normal;
     color: #999;
-    border-left: 0.18em solid #00bf4d;
+    border-left: 0.18em solid #444444;
     display: block;
     padding-left: 1em; }
 .process-page ul {
@@ -1908,14 +1918,14 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
       .process-page ul h3 {
         font-size: 1.25rem; } }
 .process-page a {
-  color: #00bf4d; }
+  color: #444444; }
 .process-page img {
   max-width: 100%;
   border-radius: 0;
   display: block;
   margin: 0 auto; }
 .process-page figcaption {
-  font-family: "Montserrat";
+  font-family: "Open sans";
   font-size: 0.9rem;
   text-align: center;
   color: #999999;
@@ -1979,7 +1989,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   text-align: center;
   position: relative; }
   .process-page .download-process p {
-    color: #00bf4d;
+    color: #444444;
     position: relative;
     top: 4.6em; }
     @media (min-width: 30em) {

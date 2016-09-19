@@ -9,7 +9,7 @@ $(document).ready(function(){
     }
   });
 $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
         || location.hostname == this.hostname) {
 
         var target = $(this.hash);
@@ -24,9 +24,9 @@ $('a[href*=#]:not([href=#])').click(function() {
 });
 $(".hire").hover(
     function(){
-        $(this).attr('src', 'assets/images/hire-hover.svg');
+        $(this).attr('src', 'assets/images/contact-hover.svg');
     }, function() {
-        $(this).attr('src', 'assets/images/hire.svg');
+        $(this).attr('src', 'assets/images/contact.svg');
     }
 );
 

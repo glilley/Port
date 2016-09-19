@@ -1,4 +1,4 @@
-// $green: #abd69d;
+// #444444: #abd69d;
 
 // header {
 // 	width: 100%;
@@ -25,25 +25,25 @@
 //   }
 // 	a { 
 // 		font-family: "Open Sans";
-// 		color: $green;
+// 		color: #444444;
 //     display: inline-block;
 //     padding: 0;
 // 		padding-top: 1rem;
 // 		text-align: center;
 // 		font-size: 1.5rem;
-// 		font-weight: 300;
+// 		font-weight: 600;
 // 		@include breakpoint(sister-bear){
 // 			padding-top: 1rem;
 // 		}
 // 	}
 // }
 // .green {
-//   color: $green;
+//   color: #444444;
 // 	&:hover{
-// 		color: lighten($green, 10%);
+// 		color: lighten(#444444, 10%);
 // }
 // 	&:active{
-// 		color: lighten($green, 5%);
+// 		color: lighten(#444444, 5%);
 // 	}
 // }
 // .sidebar-nav-item {
@@ -54,7 +54,7 @@
 //   // border-top: 1px solid rgba(255, 255, 255, 0.1);
 //   &.active {
 //     text-decoration: none;
-//     border-bottom: 2px solid $green;    
+//     border-bottom: 2px solid #444444;    
 //   }
 // }
 

@@ -6,7 +6,7 @@
 }
 $bodyColor: #777;
 $bodyDark: #666;
-$green: #abd69d;
+$green: #444444;
 
 body {
   color: $bodyColor;
@@ -41,7 +41,7 @@ body {
 .post {
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5rem;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 1.25;
     color: #999;
     text-rendering: optimizeLegibility;
@@ -83,7 +83,7 @@ body {
   }
   em {
     color: $bodyColor;
-    // font-weight: 300;
+    // font-weight: 600;
   }
 
   strong {
@@ -215,7 +215,7 @@ tbody tr:nth-child(odd) {
 
 .lead {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 /*
@@ -282,7 +282,7 @@ tbody tr:nth-child(odd) {
   margin-bottom: 1rem;
   color: #9a9a9a;
   font-family: "Open Sans";
-  font-weight: 300;
+  font-weight: 600;
 }
 
 /* Related posts */
@@ -381,7 +381,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   color: #888888;
   letter-spacing: -.025rem;
 }
@@ -509,5 +509,3 @@ a.pagination-item:hover {
     }
   }
 }
-
-
